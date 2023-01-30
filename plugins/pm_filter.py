@@ -1573,7 +1573,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="📜 ᴘᴀɢᴇ 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ", callback_data="pages")]
         )
         btn.insert(0,
             [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/+Pg9tLvtTD1JhNDI1")]
@@ -1672,7 +1672,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="📜 ᴘᴀɢᴇ 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ", callback_data="pages")]
         )
     imdb = await get_poster(search) if IMDB else None
     TEMPLATE = IMDB_TEMPLATE
