@@ -213,13 +213,13 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/+Pg9tLvtTD1JhNDI1")
+            InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/+ZiDeeN9yubk5NDhl")
         ]
     )
     btn.insert(0, 
          [
-             InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe')
+             InlineKeyboardButton(f' ɪɴꜰᴏ', 'reqinfo'),
+             InlineKeyboardButton(f' ғɪʟᴇs: {len(files)}', 'dupe')
          ]
     )        
 
@@ -1554,8 +1554,8 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-             InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe')
+             InlineKeyboardButton(f' ɪɴꜰᴏ', 'reqinfo'),
+             InlineKeyboardButton(f' ғɪʟᴇs: {len(files)}', 'dupe')
              
          ]
     )
@@ -1569,14 +1569,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="ɴᴇxᴛ▷", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/+Pg9tLvtTD1JhNDI1")]
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/+ZiDeeN9yubk5NDhl")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/+Pg9tLvtTD1JhNDI1")]
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/+ZiDeeN9yubk5NDhl")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
