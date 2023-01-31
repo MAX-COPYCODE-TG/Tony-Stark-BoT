@@ -248,6 +248,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('📀 𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗚𝗥𝗢𝗨𝗣 📀', url="https://t.me/Mallu_Movie_Hub_Group") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
