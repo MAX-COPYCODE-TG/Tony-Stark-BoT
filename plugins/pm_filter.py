@@ -589,6 +589,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
+            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('📀 𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗚𝗥𝗢𝗨𝗣 📀', url="https://t.me/Mallu_Movie_Hub_Group") ] ] ),
             protect_content=True if ident == 'checksubp' else False
         )
 
@@ -1177,9 +1178,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )    
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('⚙️ 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽𝙻𝚈 ⚙️', callback_data='admin')
-            ],[
-            InlineKeyboardButton('«𝙱𝙰𝙲𝙺', callback_data='help2'),
+            InlineKeyboardButton('⚙️ 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽𝙻𝚈 ⚙️', callback_data='admin'),
+            InlineKeyboardButton('«𝙱𝙰𝙲𝙺', callback_data='help2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
