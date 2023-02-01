@@ -589,11 +589,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('📀 𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗚𝗥𝗢𝗨𝗣 📀', url="https://t.me/Mallu_Movie_Hub_Group") ] ] ),
             protect_content=True if ident == 'checksubp' else False
-        )
-
-
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/Mallu_Movie_Hub_Group"),
+                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/+ZiDeeN9yubk5NDhl")
+               ],[
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/SD_TG_OFFLINE")
+                 ]
+                ]
+            )
+        )                 
+                
+                
     elif query.data == "removebg":
         await query.message.edit_text(
             "**Select required mode**ㅤㅤㅤㅤ",
