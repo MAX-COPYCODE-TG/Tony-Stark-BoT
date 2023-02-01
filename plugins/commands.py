@@ -238,16 +238,16 @@ async def start(client, message):
         caption=f_caption, 
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
-                [
+            [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/Mallu_Movie_Hub_Group"),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/+ZiDeeN9yubk5NDhl")
+                  InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url="https://t.me/Mallu_Movie_Hub_Group"),
+                  InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ', url="https://t.me/+ZiDeeN9yubk5NDhl")
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/SD_TG_OFFLINE")
+                  InlineKeyboardButton('ʙᴏᴛ sᴜᴘᴘᴏʀᴛ', url="https://t.me/SD_BOT_SUPPORT")
                  ]
                 ]
             )
-        ) 
+        )
                     
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
