@@ -4,7 +4,7 @@ class script(object):
     ABOUT_TXT = """<b>╔════❰ ʙᴏᴛ ᴅᴇᴛᴀɪʟs ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣
 ║┣⪼👑 ᴍʏ ɴᴀᴍᴇ : {}
-║┣⪼☎️ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/SD_TG_OFFLINE>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
+║┣⪼☎️ ᴄʀᴇᴀᴛᴏʀ : <a href=tg://settings>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
 ║┣⪼💡 ᴅᴇᴠᴏʟᴏᴘᴇʀ : <a href=https://t.me/SD_TG_OFFLINE>sᴅ_ᴏғғʟɪɴᴇ🇮🇳</a>
 ║┣⪼📢 ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ
 ║┣⪼✏️ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3
