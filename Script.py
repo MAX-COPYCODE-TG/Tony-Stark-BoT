@@ -56,20 +56,23 @@ class script(object):
 
 ‣ <code>/g_filter</code> ᴏғғ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴏᴀɴᴅ + ᴏɴ/ᴏғғ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴄᴏɴᴛʀᴏʟ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ"""
    
-    BUTTON_TXT = """Help: <b>Buttons</b>
+    BUTTON_TXT = """ʜᴇʟᴘ : <b>ʙᴜᴛᴛᴏɴs</b>
 
--this bot Supports both url and alert inline buttons.
+‣ ᴛʜɪs ʙᴏᴛ sᴜᴘᴘᴏʀᴛs ʙᴏᴛʜ ᴜʀʟ ᴀɴᴅ ᴀʟᴇʀᴛ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴs.
 
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. This bot supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
+<b>ɴᴏᴛᴇ ➾</b>
 
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:xxxxxxxxxxxx)</code>
+1. ᴛᴇʟᴇɢʀᴀᴍ ᴡɪʟʟ ɴᴏᴛ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ sᴇɴᴅ ʙᴜᴛᴛᴏɴs ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴄᴏɴᴛᴇɴᴛ, sᴏ ᴄᴏɴᴛᴇɴᴛ ɪs ᴍᴀɴᴅᴀᴛᴏʀʏ.
+2. ᴛʜɪs ʙᴏᴛ sᴜᴘᴘᴏʀᴛs ʙᴜᴛᴛᴏɴs ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
+3. ʙᴜᴛᴛᴏɴs sʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴇsᴇᴅ ᴀs ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛ
 
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
+<b>ᴜʀʟ ʙᴜᴛᴛᴏɴs ➾</b>
+
+<code>[ʙᴜᴛᴛᴏɴ ᴛᴇxᴛ](buttonurl: ᴀɴᴛʀ ʏᴏᴜʀ ʙᴜᴛᴛᴏɴᴜʀʟ)</code>
+
+<b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴs ➾</b>
+
+<code>[ʙᴜᴛᴛᴏɴ ᴛᴇxᴛ](buttonalert: ᴛʜɪs ɪs ᴀɴ ᴀʟᴇʀᴛ ᴍᴇssᴀɢᴇ)</code>"""
 
     AUTOFILTER_TXT = """ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ᴏɴ/ᴏғғ ᴍᴏᴅᴜʟᴇ
 ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ
