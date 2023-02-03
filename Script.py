@@ -308,13 +308,13 @@ Helps you to know your ping 🚶🏼‍♂️
 
 <code>/short https://youtu.be/example...</code>"""
 
-    PURGE_TXT = """<b>Purge</b>
-    
-Delete A Lot Of Messages From Groups! 
-    
- <b>ADMIN</b> 
+    PURGE_TXT = """<b>ᴘᴜʀɢᴇ ➾</b>
 
-◉ /purge :- Delete All Messages From The Replied To Message, To The Current Message"""
+ᴅᴇʟᴇᴛᴇ ᴀ ʟᴏᴛ ᴏғ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ɢʀᴏᴜᴘ!
+
+<b>ᴀᴅᴍɪɴ ➾</b>
+
+‣ /purge - ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴍᴇssᴀɢᴇ, ᴛᴏ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴍᴇssᴀɢᴇ"""
 
     CREATOR_REQUIRED = """❗<b>You have To Be The Group Creator To Do That.</b>"""
       
