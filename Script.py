@@ -160,7 +160,7 @@ class script(object):
 """
 
     STATUS_TXT = """<b>╭──᛬⚡️sᴛᴀᴛᴜs ʙᴏᴀʀᴅ⚡️᛬─╮
-├╼<b> 🟢 ᴛᴏᴛᴀʟ ғɪʟᴇs : <code>{}</code></b>
+├╼<b> 📂 ᴛᴏᴛᴀʟ ғɪʟᴇs : <code>{}</code></b>
 ├╼<b> 🔴 ᴛᴏᴛᴀʟ ᴜsᴇʀs : <code>{}</code></b>
 ├╼<b> 🟢 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : <code>{}</code></b>
 ├╼<b> 🔴 ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code> 𝙼𝙱</b>
