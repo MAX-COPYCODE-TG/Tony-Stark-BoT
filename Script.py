@@ -281,19 +281,19 @@ Helps you to know your ping 🚶🏼‍♂️
 ‣ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍs
 ‣ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ"""
 
-    JSON_TXT ="""<b>JSON:</b>
+    JSON_TXT ="""<b>ᴊsᴏɴ ➾</b>
 
-Bot returns json for all replied messages with /json
+ʙᴏᴛ ʀᴇᴛᴜʀɴs ᴊsᴏɴ ғᴏʀ ᴀʟʟ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs ᴡɪᴛʜ /json
 
-<b>Features:</b>
+<b>ғᴇᴀᴛᴜʀᴇs ➾</b>
 
-Message Editting JSON
-Pm Support
-Group Support
+ᴍᴇssᴀɢᴇ ᴇᴅɪᴛᴛɪɴɢ ᴊsᴏɴ
+ᴘᴍ sᴜᴘᴘᴏʀᴛ
+ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ
 
-<b>Note:</b>
+<b>ɴᴏᴛᴇ ➾</b>
 
-Everyone can use this command , if spaming happens bot will automatically ban you from the group."""
+ᴇᴠᴇʀʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ, ɪғ sᴘᴀᴍɪɴɢ ʜᴀᴘᴘᴇɴs ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙᴀɴ ʏᴏᴜ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ."""
 
     URLSHORT_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
 
