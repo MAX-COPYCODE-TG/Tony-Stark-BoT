@@ -240,19 +240,19 @@ Paste some texts or documents on a website!
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
+    TTS_TXT = """ʜᴇʟᴘ : <b>ᴛᴛs 🔊 ᴍᴏᴅᴜʟᴇ ➾</b>
 
-Translate text to speech
+ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛ sᴘᴇᴇᴄʜ
 
-<b>Commands and Usage:</b>
+<b>ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴜsᴀɢᴇ ➾</b>
 
-• /tts <text> : convert text to speech
+. /tts : ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ
 
-<b>NOTE:</b>
+<b>ɴᴏᴛᴇ ➾</b>
 
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• IMDb can translate texts to 200+ languages."""
+. ɪᴍᴅʙ sʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟʟᴀɢᴇ.
+. ᴛʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡᴏʀᴋs ᴏɴ ʙᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘ.
+. ɪᴍᴅʙ ᴄᴀɴ ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛs ᴛᴏ 200+ ʟᴀɴɢᴜᴀɢᴇ."""
 
     PINGS_TXT ="""<b>🌟 Ping:</b>
 
