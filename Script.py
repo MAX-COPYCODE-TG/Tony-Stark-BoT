@@ -266,18 +266,18 @@ Helps you to know your ping 🚶🏼‍♂️
 • This commands can be used buy everyone in the groups and bots pm
 • Share us for more features"""
 
-    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
+    TELE_TXT = """ʜᴇʟᴘ : <b>⋄ᴛᴇʟᴇɢʀᴀᴘʜ⋄</b>
 
-Do as you wish with telegra.ph module!
+ᴅᴏ ᴀs ʏᴏᴜ ᴡɪsʜ ᴡɪᴛʜ telegra.ph ᴍᴏᴅᴜʟᴇ!
 
-</b>USAGE:</b>
+<b>ᴜsᴀɢᴇ ➾</b>
 
-🤧 /telegraph - Send me this command reply with Picture or Vide Under (5MB) 
+ /telegraph - sᴇɴᴅ ᴍᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴘɪᴄᴛᴜʀᴇ ᴏʀ ᴠɪᴅᴇ ᴜɴᴅᴇʀ (5ᴍʙ)
 
-<b>NOTE:</b>
+<b>ɴᴏᴛᴇ ➾</b>
 
-• This Command Is Available in goups and pms
-• This Command Can be used by everyone"""
+‣ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍs
+‣ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ"""
 
     JSON_TXT ="""<b>JSON:</b>
 
