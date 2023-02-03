@@ -227,18 +227,18 @@ By @{} """
 ◉ /pin :- 𝚃𝙾 𝙿𝙸𝙽 𝚃𝙷𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙾𝙽 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝚃𝚂
 ◉ /unpin :- 𝚃𝙾 𝚄𝙽𝙿𝙸𝙽 𝚃𝙷𝙴 𝙲𝚄𝚁𝚁𝙴𝙴𝙽𝚃 𝙿𝙸𝙽𝙽𝙴𝙳 𝙼𝙴𝚂𝙰𝙰𝙶𝙴"""
 
-    PASTE_TXT = """Help: <b>Paste</b>
+    PASTE_TXT = """ʜᴇʟᴘ : <b>ᴘᴀsᴛᴇ ➾</b>
 
-Paste some texts or documents on a website!
+ᴘᴀsᴛᴇ sᴏᴍᴇ ᴛᴇxᴛs ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛs ᴏɴ ᴀ ᴡᴇʙsɪᴛᴇ!
 
-<b>Commands and Usage:</b>
+<b>ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴜsᴀɢᴇ ➾</b>
 
-• /paste [text] - paste the given text on Pasty
+‣ /paste - [ᴛᴇxᴛ] - ᴘᴀsᴛᴇ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴘᴀsᴛʏ
 
-<b>NOTE:</b>
+<b>ɴᴏᴛᴇ ➾</b>
 
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
+‣ ᴛʜᴇʀᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡᴏʀᴋs ᴏɴ ʙᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘ
+‣ ᴛʜᴇʀᴇ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴀɴʏ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀ.."""
 
     TTS_TXT = """ʜᴇʟᴘ : <b>ᴛᴛs 🔊 ᴍᴏᴅᴜʟᴇ ➾</b>
 
