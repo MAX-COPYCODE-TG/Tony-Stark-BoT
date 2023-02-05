@@ -60,7 +60,7 @@ async def save_group(bot, message):
                                                                          [[
                                                                            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/+-U__M8vJ-sU0MTg1"),
                                                                            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/SD_BOT_SUPPORT")
-                                                                        ]]
+                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
