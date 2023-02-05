@@ -53,9 +53,10 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
+            if WELCOM_PIC:
             temp.MELCOW['welcome'] = await message.reply_text( 
-                                             photo=(MELCOW_IMG),
-                                             caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
+                                             photo=(WELCOM_PIC),
+                                             caption=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title)),
                                              reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/+-U__M8vJ-sU0MTg1"),
