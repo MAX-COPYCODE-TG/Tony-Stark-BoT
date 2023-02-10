@@ -926,15 +926,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[           
             InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='son'),
             InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),           
-            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges')                                   
+            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges')                          
             ],[
-            InlineKeyboardButton('ᴄᴀʀʙᴏɴ​', callback_data='carb'),
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('ꜰᴏɴᴛ​', callback_data='fond'),
-            InlineKeyboardButton('ᴢᴏᴍʙɪᴇ​', callback_data='zombies')
-            ],[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3'),
-            InlineKeyboardButton('⟲ ʜᴏᴍᴇ ', callback_data='start'),
-            InlineKeyboardButton(' ᴄʟᴏsᴇ ✗', callback_data='close_data')
+            InlineKeyboardButton(' ɴᴇxᴛ▷', callback_data='help3')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
@@ -952,7 +948,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
             InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
             ],[
-            InlineKeyboardButton('SUNEESH', callback_data='suneesh')
+            InlineKeyboardButton('ᴢᴏᴍʙɪᴇ​', callback_data='zombies'),
+            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='suneesh'),
+            InlineKeyboardButton('ᴄᴀʀʙᴏɴ​', callback_data='carb')
+            ],[
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton(' ᴄʟᴏsᴇ ✗', callback_data='close_data')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
