@@ -901,7 +901,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "help2":
-        buttons = [[                               
+        buttons = [[
+            InlineKeyboardButton('HOW TO USED', callback_data='howtoues')
+            ],[                       
             InlineKeyboardButton('Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter')
             ],[
@@ -932,7 +934,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜰᴏɴᴛ​', callback_data='fond'),
             InlineKeyboardButton('ᴄᴀʀʙᴏɴ​', callback_data='carb')
             ],[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help2'),
             InlineKeyboardButton(' ɴᴇxᴛ▷', callback_data='help3')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
@@ -988,7 +990,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "restric":
         buttons = [[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1021,7 +1023,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )      
     elif query.data == "zombies":
         buttons = [[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1032,7 +1034,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )    
     elif query.data == "pin":
         buttons = [[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1052,7 +1054,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "pastes":
         buttons = [[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1062,7 +1064,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "pings":
         buttons = [[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1131,7 +1133,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "urlshort":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help3')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1193,11 +1195,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "suneesh":
         buttons = [[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help2')
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.SUNEESH_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "howtoues":
+        buttons = [[
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help2')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.HOWTOUES_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
