@@ -928,8 +928,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),           
             InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges')                          
             ],[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('ᴢᴏᴍʙɪᴇ​', callback_data='zombies'),
             InlineKeyboardButton('ꜰᴏɴᴛ​', callback_data='fond'),
+            InlineKeyboardButton('ᴄᴀʀʙᴏɴ​', callback_data='carb')
+            ],[
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton(' ɴᴇxᴛ▷', callback_data='help3')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
@@ -948,11 +951,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
             InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
             ],[
-            InlineKeyboardButton('ᴢᴏᴍʙɪᴇ​', callback_data='zombies'),
-            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='suneesh'),
-            InlineKeyboardButton('ᴄᴀʀʙᴏɴ​', callback_data='carb')
-            ],[
             InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='suneesh'),
             InlineKeyboardButton(' ᴄʟᴏsᴇ ✗', callback_data='close_data')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
