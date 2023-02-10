@@ -926,23 +926,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[           
             InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='son'),
             InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),           
-            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges')
-            ],[
-            InlineKeyboardButton('ᴘᴀsᴛᴇ', callback_data='pastes'),
-            InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort'),
-            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings')                                   
-            ],[                               
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
-            InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
+            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges')                                   
             ],[
             InlineKeyboardButton('ᴄᴀʀʙᴏɴ​', callback_data='carb'),
             InlineKeyboardButton('ꜰᴏɴᴛ​', callback_data='fond'),
             InlineKeyboardButton('ᴢᴏᴍʙɪᴇ​', callback_data='zombies')
             ],[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help2'),
+            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help3'),
             InlineKeyboardButton('⟲ ʜᴏᴍᴇ ', callback_data='start'),
             InlineKeyboardButton(' ᴄʟᴏsᴇ ✗', callback_data='close_data')
+         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)             
+        await query.message.edit_text(                     
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )      
+    elif query.data == "help3":
+        buttons = [[
+            InlineKeyboardButton('ᴘᴀsᴛᴇ', callback_data='pastes'),
+            InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort'),
+            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings')
+            ],[
+            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
+            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
+            InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
