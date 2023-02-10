@@ -345,9 +345,7 @@ Helps you to know your ping 🚶🏼‍♂️
 ‣ /share - ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴʏ ᴛᴇxᴛ ᴛᴏ sᴇɴᴅ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ"""
 
 
-
-
-    
+SUNEESH_TXT = """Hey Bro"""
 
 
     
