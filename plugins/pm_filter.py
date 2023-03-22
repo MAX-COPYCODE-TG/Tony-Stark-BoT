@@ -213,7 +213,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/+ZiDeeN9yubk5NDhl")
+            InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/CinemaShopLinkz")
         ]
     )
     btn.insert(0, 
@@ -1619,14 +1619,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="ɴᴇxᴛ▷", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/+ZiDeeN9yubk5NDhl")]
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/CinemaShopLinkz")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/+ZiDeeN9yubk5NDhl")]
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/CinemaShopLinkz")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
