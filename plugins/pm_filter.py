@@ -855,7 +855,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('╳ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ╳', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('♚ ʙᴏᴛ ᴏᴡɴᴇʀ', callback_data='source'),
-            InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+-U__M8vJ-sU0MTg1')
+            InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', callback_data='supports')
         ], [
             InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
         ], [
@@ -1128,6 +1128,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
                 text=(script.OWNER_INFO),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "supports":
+            btn = [[
+                    InlineKeyboardButton("Group", url="https://t.me/+vP8QdSOL8BpjM2E1"),
+                    InlineKeyboardButton("Group", url="https://t.me/Mallu_Movie_Hub_Group")
+                    ],[
+                    InlineKeyboardButton("UPDATES", url="https://t.me/CinemaShopLinkz"),
+                    InlineKeyboardButton("CHANNEL", url="https://t.me/Mr_KD_BOTZZ")
+                    ],[
+                    InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="start"),
+                    InlineKeyboardButton("ᴄʟᴏsᴇ ✗', callback_data='close_data')
+                  ]]
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(script.SUPPORTS),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
         )
