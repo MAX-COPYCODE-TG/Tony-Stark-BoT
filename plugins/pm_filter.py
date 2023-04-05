@@ -1678,13 +1678,13 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b><i>📟 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ</i></b> :- <b><i>{search}</i></b>\n<b><i>🕺 ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ</i></b> :- <b><i>{message.from_user.mention}</i></b>\n 📫 <b><i>Your Files is Ready Now</i></b>"
     if imdb and imdb.get('poster'):
         try:
-            k = await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            k=await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()       
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            k = await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
+            k=await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
             await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.delete()  
         except Exception as e:
@@ -1774,13 +1774,13 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         cap = f"<b><i>📟 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ</i></b> :- <b><i>{search}</i></b>\n<b><i>🕺 ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ</i></b> :- <b><i>{message.from_user.mention}</i></b>\n 📫 <b><i>Your Files is Ready Now</i></b>"
     if imdb and imdb.get('poster'):
         try:
-            k = await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            k=await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()          
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            k = await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))         
+            k=await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))         
             await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.delete()            
         except Exception as e:
