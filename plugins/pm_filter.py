@@ -211,17 +211,19 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
+
     btn.insert(0, 
         [
-            InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/CinemaShopLinkz")
+            InlineKeyboardButton(f'🚧 {search} 🚧 ', 'dupe')
         ]
     )
-    btn.insert(0, 
-         [
-             InlineKeyboardButton(f' ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f"ғɪʟᴇs: {len(btn)}", callback_data="files")
-         ]
-    )        
+    btn.insert(1,
+        [ 
+            InlineKeyboardButton(f'Movies', 'dupe'),
+            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files"),
+            InlineKeyboardButton(f'Info', 'tips')
+        ]
+    )    
 
     if 0 < offset <= 10:
         off_set = 0
