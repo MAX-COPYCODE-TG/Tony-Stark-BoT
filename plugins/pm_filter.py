@@ -1787,12 +1787,12 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             logger.exception(e)
             fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await fek.delete()  
+            await fek.delete()
     else:
         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
-    if pmspoll:
+    if spoll:
         await msg.message.delete()
 
 async def pm_spoll_choker(msg):
