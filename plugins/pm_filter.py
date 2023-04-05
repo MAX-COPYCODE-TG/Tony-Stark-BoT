@@ -1688,6 +1688,13 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.delete()  
         except Exception as e:
+            except Exception as e:
+            logger.exception(e)
+            await message.reply_photo(photo='https://te.legra.ph/file/471172796da37b50f4f4f.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+    else:
+        await message.reply_photo(photo='https://te.legra.ph/file/471172796da37b50f4f4f.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+    if spoll:
+        await msg.message.delete()
             logger.exception(e)
             fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
@@ -1784,6 +1791,13 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.delete()            
         except Exception as e:
+            except Exception as e:
+            logger.exception(e)
+            await message.reply_photo(photo='https://te.legra.ph/file/471172796da37b50f4f4f.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+    else:
+        await message.reply_photo(photo='https://te.legra.ph/file/471172796da37b50f4f4f.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+    if spoll:
+        await msg.message.delete()
             logger.exception(e)
             fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
