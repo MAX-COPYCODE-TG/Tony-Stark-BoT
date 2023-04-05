@@ -219,9 +219,9 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [ 
-            InlineKeyboardButton(f'Movies', 'dupe'),
+            InlineKeyboardButton(f'Movies', 'minfo'),
             InlineKeyboardButton(f"files: {len(btn)}", callback_data="files"),
-            InlineKeyboardButton(f'Info', 'tips')
+            InlineKeyboardButton(f'Info', 'info')
         ]
     )    
 
@@ -840,15 +840,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer("🤨 Curiosity is a little more, isn't it? 😁", show_alert=True)
     elif query.data == "minfo":
-        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ: ᴛʜᴇ ᴡᴀʏ ᴏғ ᴡᴀᴛᴇʀ\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)", show_alert=True)
+        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ: ᴛʜᴇ ᴡᴀʏ ᴏғ ᴡᴀᴛᴇʀ\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)", show_alert=True)      
 
-    elif query.data == "sinfo":
-        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)", show_alert=True)      
-
-    elif query.data == "tinfo":
-        await query.answer("▣ ᴛɪᴘs ▣\n\n★ ᴛʏᴘᴇ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ (ɢᴏᴏɢʟᴇ)\n\n★ ɪғ ʏᴏᴜ ɴᴏᴛ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ ɪɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴛʜᴇ ɴᴇxᴛ sᴛᴇᴘ ɪs ᴄʟɪᴄᴋ ɴᴇxᴛ ʙᴜᴛᴛᴏɴ.\n\n★ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ғɪʟᴇ", show_alert=True)
-
-    elif query.data == "reqinfo":
+    elif query.data == "info":
         await query.answer("⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\nɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜱᴇᴇ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ / sᴇʀɪᴇs ꜰɪʟᴇ, ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ", show_alert=True)
 
 
@@ -857,9 +851,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('╳ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ╳', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('♚ ʙᴏᴛ ᴏᴡɴᴇʀ', callback_data='source'),
-            InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', callback_data='supports')
+            InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ', callback_data='supports')
         ], [
-            InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
+            InlineKeyboardButton('☌ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('〄 ʜᴇʟᴘ', callback_data='help2'),
             InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ', callback_data='about')
@@ -967,8 +961,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ', url='https://t.me/+jBeBIf8RHqw4MzQ9'),
-            InlineKeyboardButton('ʙᴏᴛ sᴜᴘᴘᴏʀᴛ ', url='https://t.me/MalluBlasters')
+            InlineKeyboardButton('✇ ᴜᴘᴅᴀᴛᴇs', url='https://t.me/+jBeBIf8RHqw4MzQ9'),
+            InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ ', url='https://t.me/MalluBlasters')
             ],[
             InlineKeyboardButton('⟲ ʜᴏᴍᴇ ', callback_data='start'),
             InlineKeyboardButton(' ᴄʟᴏsᴇ ✗', callback_data='close_data')
@@ -1136,13 +1130,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "supports":
             btn = [[
                     InlineKeyboardButton("Group", url="https://t.me/+vP8QdSOL8BpjM2E1"),
-                    InlineKeyboardButton("Group", url="https://t.me/Mallu_Movie_Hub_Group")
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Mallu_Movie_Hub_Group")
                     ],[
-                    InlineKeyboardButton("UPDATES", url="https://t.me/CinemaShopLinkz"),
-                    InlineKeyboardButton("CHANNEL", url="https://t.me/Mr_KD_BOTZZ")
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/CinemaShopLinkz"),
+                    InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/Mr_KD_BOTZZ")
                     ],[
-                    InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("📞Cᴏɴᴛᴀᴄᴛ", url="https://t.me/MalluBlasters")
+                    InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="start")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1623,12 +1616,16 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-             InlineKeyboardButton(f' ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f"ғɪʟᴇs: {len(btn)}", callback_data="files")
-             
-         ]
+            InlineKeyboardButton(f'🚧 {search} 🚧 ', 'dupe')
+        ]
     )
-
+    btn.insert(1,
+        [ 
+            InlineKeyboardButton(f'Movies', 'minfo'),
+            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files"),
+            InlineKeyboardButton(f'Info', 'info')
+        ]
+    )
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
@@ -1637,16 +1634,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"📜 ᴘᴀɢᴇ 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
              InlineKeyboardButton(text="ɴᴇxᴛ▷", callback_data=f"next_{req}_{key}_{offset}")]
         )
-        btn.insert(0,
-            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/CinemaShopLinkz")]
-        )
-    else:
-        btn.append(
-            [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ", callback_data="pages")]
-        )
-        btn.insert(0,
-            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💢",url="https://t.me/CinemaShopLinkz")]
-        )
+        
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
