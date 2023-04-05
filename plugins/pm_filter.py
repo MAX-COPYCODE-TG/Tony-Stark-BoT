@@ -218,10 +218,10 @@ async def next_page(bot, query):
         ]
     )
     btn.insert(1,
-        [ 
+        [
             InlineKeyboardButton(f'Movies', 'minfo'),
-            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files"),
-            InlineKeyboardButton(f'Info', 'info')
+            InlineKeyboardButton(f'Info', 'info'),
+            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files")
         ]
     )    
 
@@ -1129,11 +1129,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "supports":
             btn = [[
-                    InlineKeyboardButton("Group", url="https://t.me/+vP8QdSOL8BpjM2E1"),
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/+vP8QdSOL8BpjM2E1"),
                     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Mallu_Movie_Hub_Group")
                     ],[
-                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/CinemaShopLinkz"),
-                    InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/Mr_KD_BOTZZ")
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Mr_KD_BOTZZ"),
+                    InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/CinemaShopLinkz")
                     ],[
                     InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="start")
                   ]]
@@ -1622,8 +1622,8 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(1,
         [ 
             InlineKeyboardButton(f'Movies', 'minfo'),
-            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files"),
-            InlineKeyboardButton(f'Info', 'info')
+            InlineKeyboardButton(f'Info', 'info'),
+            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files")
         ]
     )
     if offset != "":
