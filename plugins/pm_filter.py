@@ -595,10 +595,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url="https://t.me/Mallu_Movie_Hub_Group"),
-                  InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ', url="https://t.me/+ZiDeeN9yubk5NDhl")
+                  InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
+                  InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
                ],[
-                  InlineKeyboardButton('ʙᴏᴛ sᴜᴘᴘᴏʀᴛ', url="https://t.me/SD_BOT_SUPPORT")
+                  InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
                  ]
                 ]
             )
