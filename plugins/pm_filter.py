@@ -1682,7 +1682,7 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete() 
             thega=await message.reply_photo(
-            photo=random.choice(CLOSE_IMG)
+            photo=random.choice(CLOSE_IMG),
             await hehe.delete()       
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
@@ -1691,7 +1691,7 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.delete() 
             thega=await message.reply_photo(
-            photo=random.choice(CLOSE_IMG)
+            photo=random.choice(CLOSE_IMG),
             await hehe.delete()  
         except Exception as e:
             logger.exception(e)
@@ -1784,7 +1784,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()  
             thega=await message.reply_photo(
-            photo=random.choice(CLOSE_IMG)
+            photo=random.choice(CLOSE_IMG),
             await hehe.delete()        
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
@@ -1798,7 +1798,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
             thega=await message.reply_photo(
-            photo=random.choice(CLOSE_IMG)
+            photo=random.choice(CLOSE_IMG),
             await hehe.delete()  
     else:
         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
