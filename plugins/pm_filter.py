@@ -108,7 +108,7 @@ async def pm_filter(client, message):
             await pm_AutoFilter(client, message)
     
 
-           @Client.on_message(filters.private & filters.text & filters.incoming)
+@Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
     content = message.text
     user = message.from_user.first_name
