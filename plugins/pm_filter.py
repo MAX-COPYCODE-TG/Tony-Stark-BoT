@@ -219,7 +219,7 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f"Send All Files", callback_data=f"send_all#{req}#{key}#{pre}"),
+            InlineKeyboardButton(f"Send All Files", callback_data="send_all#{req}#{key}#{pre}"),
             InlineKeyboardButton(f'Info', 'info'),
             InlineKeyboardButton(f"files: {len(btn)}", callback_data="files")
         ]
@@ -1340,7 +1340,7 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(1,
         [ 
-            InlineKeyboardButton(f"Send All Files", callback_data=f"send_all#{req}#{key}#{pre}"),
+            InlineKeyboardButton(f"Send All Files", callback_data="send_all#{req}#{key}#{pre}"),
             InlineKeyboardButton(f'Info', 'info'),
             InlineKeyboardButton(f"files: {len(btn)}", callback_data="files")
         ]
