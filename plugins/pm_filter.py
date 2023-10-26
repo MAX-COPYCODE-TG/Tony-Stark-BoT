@@ -236,7 +236,7 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f"Send All Files", callback_data="send_all#{req}#{key}#{pre}"),
+            InlineKeyboardButton(f"Send All Files", callback_data=f"send_all#{req}#{key}#{pre}"),
             InlineKeyboardButton(f'Info', 'info'),
             InlineKeyboardButton(f"files: {len(btn)}", callback_data="files")
         ]
@@ -1531,7 +1531,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
     if spoll:
         await msg.message.delete()
 
-async def advantage_spell_chok(client, msg):
+async def pm_spoll_choker(msg):
     mv_id = msg.id
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
@@ -1557,8 +1557,8 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(40)
-        await k.delete()      
+        await asyncio.sleep(8)
+        await k.delete()
         return
     movielist = []
     if not movies:
@@ -1573,7 +1573,7 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(40)
+        await asyncio.sleep(8)
         await k.delete()
         return
     PM_SPELL_CHECK[msg.id] = movielist
@@ -1607,8 +1607,8 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(40)
-        await k.delete()      
+        await asyncio.sleep(8)
+        await k.delete()
         return
     movielist = []
     if not movies:
@@ -1623,7 +1623,7 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(40)
+        await asyncio.sleep(8)
         await k.delete()
         return
     SPELL_CHECK[msg.id] = movielist
