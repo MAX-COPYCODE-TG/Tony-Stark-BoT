@@ -7,11 +7,11 @@ class script(object):
 ◎ᴅᴀᴛᴀʙᴀsᴇ: ᴍᴏɴɢᴏ ᴅʙ
 ◎ʙᴏᴛ sᴇʀᴠᴇʀ: <a href=https://t.me/copycod_Official>ᴀɴʏᴡʜᴇʀᴇ</b></a>"""
 
-    SOURCE_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟</b>
-    
-<b>• ꜰᴜʟʟ ɴᴀᴍᴇ : sᴅ ᴏғғɪᴄɪᴀʟ </b>
-<b>• ᴜꜱᴇʀɴᴀᴍᴇ : @SD_TG_OFFLINE </b>
-<b>• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href=https://t.me/SD_TG_OFFLINE>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>"""
+    SOURCE_TXT = """📍ɪғ ʏᴏᴜ ᴜsᴇ ɪɴ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ's..!!
+
+ᴅᴇᴠs :
+㊂ ᴅᴇᴠ ❶| <a href=https://t.me/TG_x_filter>『sᴜɴᴇᴇsʜ࿐Tɢ』#Official™🇮🇳</a>
+㊂ ᴅᴇᴠ ❷| <a href=https://t.me/dxfilter>ꪶ‌ꪆ KD Tech [#Offline] 🇮🇳</b></a>"""
 
 
     FILE_TXT = """ʜᴇʟᴘ : <b>ғɪʟᴇ sᴛᴏʀᴇ ᴍᴏᴅᴜʟᴇ.../</b>
@@ -81,8 +81,7 @@ class script(object):
 ‣ /set_template - sᴇᴛ ᴄᴜsᴛᴏᴍ ɪᴍᴅʙ ᴛᴇᴍᴘʟᴀᴛᴇ ғᴏʀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ
 ‣ /get_template - ɢᴇᴛ ᴄᴜʀʀᴇɴᴛ ɪᴍᴅʙ ᴛᴇᴍᴘʟᴀᴛᴇ ᴏғ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ
 
-<b>ᴄʀᴇᴀᴛᴏʀ ➾ </b> <a href=tg://settings><b>ᴛʜɪs ᴘᴇʀsᴏɴ</b></a>
-<b>ᴅᴇᴠᴏʟᴏᴘᴇʀ ➾ </b> <a href=https://t.me/SD_TG_OFFLINE><b>sᴅ_ᴏғғʟɪɴᴇ🇮🇳</b></a>"""
+"""
 
     CONNECTION_TXT = """ʜᴇʟᴘ : <b>ᴄᴏɴɴᴇᴄᴛɪᴏɴs</b>
 
