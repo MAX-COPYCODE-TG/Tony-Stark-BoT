@@ -214,11 +214,6 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'📍 {search} 📍', 'dupe')
-        ]
-    )
-    btn.insert(1,
-        [
             InlineKeyboardButton(f"ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ", url="https://t.me/Elizabeth_Movie_Bot"),
             InlineKeyboardButton(f"ᴛᴏᴛᴀʟ ғɪʟᴇs: {len(btn)}", callback_data="files")
         ]
@@ -1332,12 +1327,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-    btn.insert(0, 
-        [
-            InlineKeyboardButton(f'📍 {search} 📍', 'dupe')
-        ]
-    )
-    btn.insert(1,
+    btn.insert(0,
         [ 
             InlineKeyboardButton(f"ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ", url="https://t.me/Elizabeth_Movie_Bot"),
             InlineKeyboardButton(f"ᴛᴏᴛᴀʟ ғɪʟᴇs: {len(btn)}", callback_data="files")
