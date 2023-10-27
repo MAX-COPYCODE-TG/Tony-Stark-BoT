@@ -1382,7 +1382,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>📟 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ</i></b> :- <b><i>{search}</i></b>\n<b><i>🕺 ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ</i></b> :- <b><i>{message.from_user.mention}</i></b>\n 📫 <b><i>Your Files is Ready Now</i></b>"
+        cap = f"<b>👻ʜᴇʏ {message.from_user.mention},ʏᴏᴜʀ sᴇᴀʀᴄʜ ʀᴇsᴜʟᴛ ɪs ʀᴇᴀᴅʏ.👇\n\n💬 ᴛɪᴛʟᴇ : {search}\n🗃️ ᴛᴏᴛᴀʟ ғɪʟᴇs : {str(total_results)}\n🎙 ᴀᴜᴅɪᴏ : ᴍᴜʟᴛɪ\n\n🪁 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=NOR_IMG, reply_markup=InlineKeyboardMarkup(btn))
@@ -1478,7 +1478,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>📟 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ</i></b> :- <b><i>{search}</i></b>\n<b><i>🕺 ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ</i></b> :- <b><i>{message.from_user.mention}</i></b>\n 📫 <b><i>Your Files is Ready Now</i></b>"
+        cap = f"<b>👻ʜᴇʏ {message.from_user.mention},ʏᴏᴜʀ sᴇᴀʀᴄʜ ʀᴇsᴜʟᴛ ɪs ʀᴇᴀᴅʏ.👇\n\n💬 ᴛɪᴛʟᴇ : {search}\n🗃️ ᴛᴏᴛᴀʟ ғɪʟᴇs : {str(total_results)}\n🎙 ᴀᴜᴅɪᴏ : ᴍᴜʟᴛɪ\n\n🪁 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
