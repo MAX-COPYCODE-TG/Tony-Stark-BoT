@@ -214,14 +214,13 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🚧 {search} 🚧 ', 'dupe')
+            InlineKeyboardButton(f'📍 {search} 📍', 'dupe')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f"Send All Files", callback_data=f"send_all#{req}#{key}#{pre}"),
-            InlineKeyboardButton(f'Info', 'info'),
-            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files")
+            InlineKeyboardButton(f"ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ", url="https://t.me/Elizabeth_Movie_Bot"),
+            InlineKeyboardButton(f"ᴛᴏᴛᴀʟ ғɪʟᴇs: {len(btn)}", callback_data="files")
         ]
     )    
 
@@ -1335,14 +1334,13 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🚧 {search} 🚧 ', 'dupe')
+            InlineKeyboardButton(f'📍 {search} 📍', 'dupe')
         ]
     )
     btn.insert(1,
         [ 
-            InlineKeyboardButton(f"Send All Files", callback_data="send_all#{req}#{key}#{pre}"),
-            InlineKeyboardButton(f'Info', 'info'),
-            InlineKeyboardButton(f"files: {len(btn)}", callback_data="files")
+            InlineKeyboardButton(f"ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ", url="https://t.me/Elizabeth_Movie_Bot"),
+            InlineKeyboardButton(f"ᴛᴏᴛᴀʟ ғɪʟᴇs: {len(btn)}", callback_data="files")
         ]
     )
     if offset != "":
