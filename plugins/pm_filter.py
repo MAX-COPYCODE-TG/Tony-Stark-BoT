@@ -637,11 +637,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴜʀʟ sʜᴏʀᴛ', callback_data='urlshort')
             ],[
             InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='son'),
-            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='suneesh'),
+            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
             InlineKeyboardButton('Sᴛᴀᴛᴜꜱ', callback_data='stats')
             ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'), 
-            InlineKeyboardButton('ɴᴇxᴛ▷', callback_data='help')  
+            InlineKeyboardButton('ɴᴇxᴛ »', callback_data='help')  
          ]] 
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
@@ -660,11 +660,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴢᴏᴍʙɪᴇ​', callback_data='zombies'),
             InlineKeyboardButton('ꜰᴏɴᴛ​', callback_data='fond'),
             ],[
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('image', callback_data='image'),
+            InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
+            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='suneesh'),
             InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
             ],[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton(' ᴄʟᴏsᴇ ✗', callback_data='close_data')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
@@ -707,13 +707,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "image":
+    elif query.data == "sticker":
         buttons = [[
-            InlineKeyboardButton('⇍ʙᴀᴄᴋ⇏', callback_data='help')
+            InlineKeyboardButton('⇍ʙᴀᴄᴋ⇏', callback_data='help2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.IMAGE_TXT.format(temp.B_NAME),
+            text=script.STICKER_TXT.format(temp.B_NAME),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
