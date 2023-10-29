@@ -1507,7 +1507,7 @@ async def pm_spoll_choker(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b>Hey Bro please check your movie name</b>")
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1536,14 +1536,14 @@ async def pm_spoll_choker(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg",caption="<b>Hey Bro please check your movie name</b>")
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg",caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    await msg.reply("<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
 
 async def advantage_spell_chok(msg):
     query = re.sub(
@@ -1554,7 +1554,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b>Hey Bro please check your movie name</b>")
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1584,7 +1584,7 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔎𝗚𝗢𝗢𝗚𝗟𝗘🔍", url="https://www.google.com/search?q={reqst_gle}")]])
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b>Hey Bro please check your movie name</b>", reply_markup = one_button)
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup = one_button)
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1596,7 +1596,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+    await msg.reply("<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
