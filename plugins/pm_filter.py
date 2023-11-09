@@ -27,8 +27,6 @@ SPELL_CHECK = {}
 PM_SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
-MOVIE = "https://telegra.ph/file/2151379f0abc3078ba112.jpg"
-NOTFOUND = "<b>➠ sᴏʀʀʏ ᴍᴏᴠɪᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ​...😢</b>\n\n <b>➠ ɴᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀ ʙᴀsᴇ ᴏʀ ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴛʜᴇ ᴀᴅᴍɪɴ ɪꜰ ʏᴏᴜ ᴀʀᴇ sᴜʀᴇ ɪᴛ ʜᴀs ʙᴇᴇɴ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴅᴇᴛᴀɪʟs ᴄᴀɴ ʙᴇ ᴛᴀᴋᴇɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ʙᴜᴛᴛᴏɴ ᴛʜᴀᴛ ʏᴏᴜ sᴇᴇ​</b>"
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
@@ -133,7 +131,7 @@ async def pm_next_page(bot, query):
     if not files:
         return
     
-    btn = [[InlineKeyboardButton(text=f"📥[{get_size(file.file_size)}] {file.file_name}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
+    btn = [[InlineKeyboardButton(text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
                 
     if 0 < offset <= 10:
         off_set = 0
@@ -195,7 +193,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📥[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
+                    text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -207,7 +205,7 @@ async def next_page(bot, query):
                     text=f"{file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"📥{get_size(file.file_size)}",
+                    text=f"📁{get_size(file.file_size)}",
                     callback_data=f'files#{nxreq}#{file.file_id}',
                 ),
             ]
@@ -273,19 +271,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.reply_photo(
-                        photo=(MOVIE),
-                        caption=(NOTFOUND),
-                        reply_markup=InlineKeyboardMarkup(
-                                                [[
-                                                   InlineKeyboardButton('♻️ ᴍᴀʟʏᴀʟᴀᴍ  ♻️', 'trtoml'),
-                                                   InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
-                                               ],[
-                                                   InlineKeyboardButton(" ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ​ ᴀᴅᴍɪɴ​", url="https://graph.org/How-To-Get-Movies-From-Bot-12-03")
-                                                ]] 
-                     ),
-                     parse_mode='html'
-              )
+            k = await query.message.edit('<b>➠ sᴏʀʀʏ ᴍᴏᴠɪᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ​...😢</b>\n\n <b>➠ ɴᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀ ʙᴀsᴇ ᴏʀ ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴛʜᴇ ᴀᴅᴍɪɴ ɪꜰ ʏᴏᴜ ᴀʀᴇ sᴜʀᴇ ɪᴛ ʜᴀs ʙᴇᴇɴ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴅᴇᴛᴀɪʟs ᴄᴀɴ ʙᴇ ᴛᴀᴋᴇɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ʙᴜᴛᴛᴏɴ ᴛʜᴀᴛ ʏᴏᴜ sᴇᴇ​</b>')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -1318,7 +1304,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📥[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
+                    text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1331,7 +1317,7 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"📥{get_size(file.file_size)}",
+                    text=f"📁{get_size(file.file_size)}",
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
             ]
@@ -1435,10 +1421,10 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         search, files, offset, total_results = pmspoll
     pre = 'pmfilep' if PROTECT_CONTENT else 'pmfile'
     if SINGLE_BUTTON:
-        btn = [[InlineKeyboardButton(text=f"📥[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}')] for file in files]
+        btn = [[InlineKeyboardButton(text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}')] for file in files]
     else:
         btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{file.file_id}',),
-              InlineKeyboardButton(text=f"📥{get_size(file.file_size)}", callback_data=f'{pre}_#{file.file_id}')] for file in files ]             
+              InlineKeyboardButton(text=f"📁{get_size(file.file_size)}", callback_data=f'{pre}_#{file.file_id}')] for file in files ]             
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         PM_BUTTONS[key] = search
