@@ -27,6 +27,8 @@ SPELL_CHECK = {}
 PM_SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
+MOVIE = "https://telegra.ph/file/2151379f0abc3078ba112.jpg"
+NOTFOUND = "<b>➠ sᴏʀʀʏ ᴍᴏᴠɪᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ​...😢</b>\n\n <b>➠ ɴᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀ ʙᴀsᴇ ᴏʀ ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴛʜᴇ ᴀᴅᴍɪɴ ɪꜰ ʏᴏᴜ ᴀʀᴇ sᴜʀᴇ ɪᴛ ʜᴀs ʙᴇᴇɴ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴅᴇᴛᴀɪʟs ᴄᴀɴ ʙᴇ ᴛᴀᴋᴇɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ʙᴜᴛᴛᴏɴ ᴛʜᴀᴛ ʏᴏᴜ sᴇᴇ​</b>"
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
@@ -271,7 +273,19 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.reply_photo(
+                        photo=(MOVIE),
+                        caption=(NOTFOUND),
+                      reply_markup=InlineKeyboardMarkup(
+                                              [[
+                                                 InlineKeyboardButton('♻️ ᴍᴀʟʏᴀʟᴀᴍ  ♻️', 'trtoml'),
+                                                 InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
+                                             ],[
+                                                 InlineKeyboardButton(" ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ​ ᴀᴅᴍɪɴ​", url="https://graph.org/How-To-Get-Movies-From-Bot-12-03")
+                                             ]] 
+                     ),
+                     parse_mode='html'
+              )
             await asyncio.sleep(10)
             await k.delete()
 
