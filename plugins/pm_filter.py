@@ -276,13 +276,13 @@ async def advantage_spoll_choker(bot, query):
             k = await query.message.reply_photo(
                         photo=(MOVIE),
                         caption=(NOTFOUND),
-                      reply_markup=InlineKeyboardMarkup(
-                                              [[
-                                                 InlineKeyboardButton('♻️ ᴍᴀʟʏᴀʟᴀᴍ  ♻️', 'trtoml'),
-                                                 InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
-                                             ],[
-                                                 InlineKeyboardButton(" ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ​ ᴀᴅᴍɪɴ​", url="https://graph.org/How-To-Get-Movies-From-Bot-12-03")
-                                             ]] 
+                        reply_markup=InlineKeyboardMarkup(
+                                                [[
+                                                   InlineKeyboardButton('♻️ ᴍᴀʟʏᴀʟᴀᴍ  ♻️', 'trtoml'),
+                                                   InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
+                                               ],[
+                                                   InlineKeyboardButton(" ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ​ ᴀᴅᴍɪɴ​", url="https://graph.org/How-To-Get-Movies-From-Bot-12-03")
+                                                ]] 
                      ),
                      parse_mode='html'
               )
