@@ -97,15 +97,23 @@ async def give_filter(client, message):
                 await auto_filter(client, message)   
 
 
-@Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
-async def pm_filter(client, message):
-    if PMFILTER:
-        if G_FILTER:
-            kd = await global_filters(client, message)
-            if kd == False:
-                await pm_AutoFilter(client, message)
-        else:
-            await pm_AutoFilter(client, message)
+@Client.on_message(filters.group & filters.text & filters.incoming)
+async def give_filter(client, message):
+    if message.chat.id != SUPPORT_CHAT_ID:
+        glob = await global_filters(client, message)
+        if glob == False:
+            manual = await manual_filters(client, message)
+            if manual == False:
+                settings = await get_settings(message.chat.id)
+                try:
+                    if settings['auto_ffilter']:
+                        await auto_filter(client, message)
+                except KeyError:
+                    grpid = await active_connection(str(message.from_user.id))
+                    await save_group_settings(grpid, 'auto_ffilter', True)
+                    settings = await get_settings(message.chat.id)
+                    if settings['auto_ffilter']:
+                        await auto_filter(client, message)
     else: #a better logic to avoid repeated lines of code in auto_filter function
         search = message.text
         temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
