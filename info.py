@@ -47,7 +47,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "6"))
-START_MESSAGE = environ.get('START_MESSAGE', 'ʜᴇʏ, {user}\n\nɪ ᴀᴍ ᴀ ᴀᴜᴛᴏғɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟғɪʟᴛᴇʀ  + ғɪʟᴇsᴛᴏʀᴇ ʙᴏᴛ I ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍʏ ᴘᴍ ! ᴀʟsᴏ ɪ ᴄᴀɴ sᴛᴏʀᴇ ғɪʟᴇs..!!')
+START_MESSAGE = environ.get('START_MESSAGE', '<b><u>𝖧𝖾𝗒, {user}</u>\n\n𝖨 𝖺𝗆 𝖺 𝖠𝗎𝗍𝗈𝖥𝗂𝗅𝗍𝖾𝗋 + 𝖬𝖺𝗇𝗎𝖺𝗅𝖥𝗂𝗅𝗍𝖾𝗋 + 𝖥𝗂𝗅𝖾𝖲𝗍𝗈𝗋𝖾 𝖡𝗈𝗍 𝖨 𝗐𝗂𝗅𝗅 𝖦𝗂𝗏𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 𝗂𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 𝖠𝗇𝖽 𝖬𝗒 𝖯𝗆 ! 𝖠𝗅𝗌𝗈 𝗂 𝖢𝖺𝗇 𝖲𝗍𝗈𝗋𝖾 𝖥𝗂𝗅𝖾𝗌..!!</b>')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "📣 ʜᴇʏ {query}! ᴛʜᴀᴛ's ɴᴏᴛ ғᴏʀ ʏᴏᴜ. ᴘʟᴇᴀsᴇ ʀᴇϙᴜᴇsᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '<b><u>⚠️ ᴘʟᴇᴀsᴇ ғᴏʟʟᴏᴡɪɴɢ ᴛʜᴇ ʀᴜʟᴇs ⚠️</u>\n\nғɪʀsᴛ ᴄʟɪᴄᴋ ᴏɴ "🚸 ᴊᴏɪɴ ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ 🚸" ʙᴜᴛᴛᴏɴ. ᴛʜᴇɴ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ᴄʟɪᴄᴋ ᴏɴ "🔄 ᴛʀʏ ᴀɢᴀɪɴ 🔄" ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ғɪʟᴇs..!!</b>')
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://graph.org/file/b386a561b6c4a1be48411.jpg")
