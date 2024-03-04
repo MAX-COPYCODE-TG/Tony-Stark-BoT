@@ -159,7 +159,7 @@ async def pm_next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("✧ 𝐁𝐚𝐜𝐤", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("⇇𝐁𝐚𝐜𝐤", callback_data=f"pmnext_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]                                  
         )
     elif off_set is None:
@@ -169,7 +169,7 @@ async def pm_next_page(bot, query):
     else:
         btn.append(
             [
-                InlineKeyboardButton("✧ 𝐁𝐚𝐜𝐤", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("⇇𝐁𝐚𝐜𝐤", callback_data=f"pmnext_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("𝐍𝐞𝐱𝐭⇉", callback_data=f"pmnext_{req}_{key}_{n_offset}")
             ],
@@ -245,7 +245,7 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("✧ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("⇇𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
@@ -256,7 +256,7 @@ async def next_page(bot, query):
     else:
         btn.append(
             [
-                InlineKeyboardButton("✧ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("⇇𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("𝐍𝐞𝐱𝐭⇉", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
@@ -688,7 +688,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('👾 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 👾', callback_data='source')
+            InlineKeyboardButton('👾 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 👾', callback_data='source'),
+            InlineKeyboardButton('Bot Update', url='Luttappi_Bot_Updates')
             ],[
             InlineKeyboardButton('🏠 ʜᴏᴍᴇ ', callback_data='start'),
             InlineKeyboardButton(' ᴄʟᴏsᴇ 🧨', callback_data='close_data')
