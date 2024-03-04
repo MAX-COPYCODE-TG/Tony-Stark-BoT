@@ -10,11 +10,12 @@ class script(object):
 
 𝖣𝗈𝗇'𝗍 𝗌𝗉𝖺𝗆 𝖬𝖾..!!</b>"""
 
-    ABOUT_TXT = """<b>◎ɴᴀᴍᴇ: {}</b>
-<b>◎ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/TG_x_filter>『sᴜɴᴇᴇsʜ࿐Tɢ』#Official™🇮🇳</b></a>
-<b>◎ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
-<b>◎ᴅᴀᴛᴀʙᴀsᴇ: ᴍᴏɴɢᴏ ᴅʙ</b>
-<b>◎ʙᴏᴛ sᴇʀᴠᴇʀ: <a href=https://t.me/copycod_Official>ᴀɴʏᴡʜᴇʀᴇ</b></a>"""
+    ABOUT_TXT = """<b>◎𝐍𝐚𝐦𝐞 : {}</b>
+<b>◎𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : <a href=tg://settings>𝐓𝐡𝐢𝐬 𝐏𝐞𝐫𝐬𝐨𝐧</b></a>
+<b>◎𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
+<b>◎𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : 𝐏𝐲𝐭𝐡𝐨𝐧3</b>
+<b>◎𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 : 𝐌𝐨𝐧𝐠𝐨 𝐃𝐁</b>
+<b>◎𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞 : <a href=https://t.me/Bot_Mechanic_Updates>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</b></a>"""
 
     SOURCE_TXT = """<b>📍ɪғ ʏᴏᴜ ᴜsᴇ ɪɴ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ's..!!
 
