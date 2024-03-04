@@ -1,5 +1,14 @@
 class script(object):   
-    HELP_TXT = """<b>ʜᴇʏ,{} ʜᴇʀᴇ ɪs ᴍʏ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
+    HELP_TXT = """<b>𝖧𝖺𝗒 {}
+
+𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌
+
+/start - 𝖢𝗁𝖾𝖼𝗄 𝖨, 𝗆 𝖠𝗅𝗂𝗏𝖾..
+/status - 𝖡𝗈𝗍 𝖲𝗍𝖺𝗍𝗎𝗌
+/id - 𝖴𝗌𝖾𝗋 𝗂𝗇𝖿𝗈
+/broadcast - 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 (𝗈𝗐𝗇𝖾𝗋 𝗈𝗇𝗅𝗒 )
+
+𝖣𝗈𝗇'𝗍 𝗌𝗉𝖺𝗆 𝖬𝖾..!!</b>"""
 
     ABOUT_TXT = """<b>◎ɴᴀᴍᴇ: {}</b>
 <b>◎ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/TG_x_filter>『sᴜɴᴇᴇsʜ࿐Tɢ』#Official™🇮🇳</b></a>
