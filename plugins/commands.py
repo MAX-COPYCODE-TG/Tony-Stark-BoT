@@ -21,9 +21,11 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [[           
-            InlineKeyboardButton('📢 ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs ', url='https://t.me/cinema_flix_updates'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ✨️', url='https://t.me/+iEbhY7mM4oE1OTVl')
+        buttons = [[
+            InlineKeyboardButton('𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('📢 ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs', url='https://t.me/cinema_flix_updates'),
+            InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
             InlineKeyboardButton('〄 ᴄʜᴇᴄᴋ ᴍʏ ᴘᴍ ʙʀᴏ 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
@@ -39,15 +41,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('sᴇᴀʀᴄʜ 🔍 ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', url='https://t.me/+iEbhY7mM4oE1OTVl')
+            InlineKeyboardButton('𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝐇𝐞𝐥𝐩', callback_data='help2'),
+            InlineKeyboardButton('𝐒𝐞𝐚𝐫𝐜𝐡', switch_inline_query_current_chat='')
         ], [
-            InlineKeyboardButton('🗄 ʜᴇʟᴘ', callback_data='help2'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🛡', callback_data='about')
-        ], [
-            InlineKeyboardButton('🔗 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -91,15 +90,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('sᴇᴀʀᴄʜ 🔍 ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', url='https://t.me/+iEbhY7mM4oE1OTVl')
+            InlineKeyboardButton('𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝐇𝐞𝐥𝐩', callback_data='help2'),
+            InlineKeyboardButton('𝐒𝐞𝐚𝐫𝐜𝐡', switch_inline_query_current_chat='')
         ], [
-            InlineKeyboardButton('🗄 ʜᴇʟᴘ', callback_data='help2'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🛡', callback_data='about')
-        ], [
-            InlineKeyboardButton('🔗 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
