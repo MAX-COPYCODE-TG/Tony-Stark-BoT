@@ -17,11 +17,9 @@ class script(object):
 <b>◎𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 : 𝐌𝐨𝐧𝐠𝐨 𝐃𝐁</b>
 <b>◎𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞 : <a href=https://t.me/Bot_Mechanic_Updates>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</b></a>"""
 
-    SOURCE_TXT = """<b>📍ɪғ ʏᴏᴜ ᴜsᴇ ɪɴ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ's..!!
-
-<u>ᴅᴇᴠs :</u>
-㊂ ᴅᴇᴠ ❶| <a href=https://t.me/TG_x_filter>『sᴜɴᴇᴇsʜ࿐Tɢ』#Official™🇮🇳</a>
-㊂ ᴅᴇᴠ ❷| <a href=https://t.me/dxfilter>ꪶ‌ꪆ KD Tech [#Offline] 🇮🇳</b></a>"""
+    SOURCE_TXT = """<b>𝖭𝖮𝖳𝖤:</b>
+<b>🔰𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 𝗂𝗌 𝗇𝗈𝗍 𝖺𝗇 𝗈𝗉𝖾𝗇 𝗌𝗈𝗎𝗋𝖼𝖾 𝗉𝗋𝗈𝗃𝖾𝖼𝗍..!!</b>
+  <b>𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝖽 𝖡𝗒 : <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>"""
 
 
     FILE_TXT = """ʜᴇʟᴘ : <b>ғɪʟᴇ sᴛᴏʀᴇ ᴍᴏᴅᴜʟᴇ.../</b>
