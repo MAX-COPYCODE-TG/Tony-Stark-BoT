@@ -702,7 +702,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('« 𝐁𝐚𝐜𝐤 »', callback_data='start')
+            InlineKeyboardButton('« 𝐁𝐚𝐜𝐤', callback_data='start'),
+            InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐞', url='https://t.me/TG_x_filter')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
