@@ -4,7 +4,7 @@ from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, PROTECT_CONTENT, \
-    SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, NO_RESULTS_MSG, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, SUPPORT_CHAT_ID, BUTTON_LOCK_TEXT, NOR_IMG
+    SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, NO_RESULTS_MSG, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, SUPPORT_CHAT_ID, BUTTON_LOCK_TEXT, NOR_IMG, SPELL_IMG
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums 
@@ -1432,9 +1432,9 @@ async def pm_spoll_choker(msg):
         ],[
             InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
         ]]        
-        k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)   
-        await asyncio.sleep(30)
-        await k.delete()
+        k=await msg.reply_photo(photo=SPELL_IMG, caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)   
+        await asyncio.sleep(IMDB_DELET_TIME)
+        await fuk.delete()
         await msg.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -1468,9 +1468,9 @@ async def pm_spoll_choker(msg):
         ],[
             InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
         ]]
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg",caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
-        await asyncio.sleep(8)
-        await k.delete()
+        k = await msg.reply_Photo(Photo=SPELL_IMG,caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+        await asyncio.sleep(IMDB_DELET_TIME)
+        await fuk.delete()
         return
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[
@@ -1479,9 +1479,9 @@ async def pm_spoll_choker(msg):
     ],[
         InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
     ]]
-    k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id) 
-    await asyncio.sleep(30)
-    await k.delete()
+    k=await msg.reply_photo(photo=SPELL_IMG, caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id) 
+    await asyncio.sleep(IMDB_DELET_TIME)
+    await fuk.delete()
     await msg.delete()
     return
 async def manual_filters(client, message, text=False):
