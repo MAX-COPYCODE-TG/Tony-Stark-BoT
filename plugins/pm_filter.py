@@ -1432,7 +1432,7 @@ async def pm_spoll_choker(msg):
         ],[
             InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
         ]]        
-        k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn))    
+        k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)   
         await asyncio.sleep(30)
         await k.delete()
         await msg.delete()
@@ -1468,7 +1468,7 @@ async def pm_spoll_choker(msg):
         ],[
             InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
         ]]
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg",caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn))
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg",caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1479,7 +1479,7 @@ async def pm_spoll_choker(msg):
     ],[
         InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
     ]]
-    k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn))    
+    k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id) 
     await asyncio.sleep(30)
     await k.delete()
     await msg.delete()
