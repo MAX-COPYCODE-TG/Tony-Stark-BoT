@@ -259,7 +259,7 @@ async def start(client, message):
             [[                          
                InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
             ]]
-                )
+           )
         )
                     
 
