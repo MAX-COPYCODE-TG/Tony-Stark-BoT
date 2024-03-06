@@ -1492,7 +1492,7 @@ async def pm_spoll_choker(msg):
     ],[
         InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
     ]]
-    k=await msg.reply_photo(photo=SPELL_IMG, caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id) 
+    k=await msg.reply_photo(photo=SPELL_IMG, caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn)) 
     await asyncio.sleep(IMDB_DELET_TIME)
     await fuk.delete()
     await msg.delete()
