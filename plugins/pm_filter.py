@@ -232,7 +232,7 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f"𝐂𝐡𝐞𝐜𝐤 𝐌𝐲 𝐏𝐦", url=url=f"https://t.me/{temp.U_NAME}"),
+            InlineKeyboardButton(f"𝐂𝐡𝐞𝐜𝐤 𝐌𝐲 𝐏𝐦", url=f"https://t.me/{temp.U_NAME}"),
             InlineKeyboardButton(f"𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐥𝐞𝐬: {len(btn)}", callback_data="files")
         ]
     )    
@@ -1348,7 +1348,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0,
         [ 
-            InlineKeyboardButton(f"𝐂𝐡𝐞𝐜𝐤 𝐌𝐲 𝐏𝐦", url=url=f"https://t.me/{temp.U_NAME}"),
+            InlineKeyboardButton(f"𝐂𝐡𝐞𝐜𝐤 𝐌𝐲 𝐏𝐦", url=f"https://t.me/{temp.U_NAME}"),
             InlineKeyboardButton(f"𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐥𝐞𝐬: {len(btn)}", callback_data="files")
         ]
     )
