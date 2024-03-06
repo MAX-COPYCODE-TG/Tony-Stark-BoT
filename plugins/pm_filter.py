@@ -289,7 +289,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>➠ sᴏʀʀʏ ᴍᴏᴠɪᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ​...😢</b>\n\n <b>➠ ɴᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀ ʙᴀsᴇ ᴏʀ ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴛʜᴇ ᴀᴅᴍɪɴ ɪꜰ ʏᴏᴜ ᴀʀᴇ sᴜʀᴇ ɪᴛ ʜᴀs ʙᴇᴇɴ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴅᴇᴛᴀɪʟs ᴄᴀɴ ʙᴇ ᴛᴀᴋᴇɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ʙᴜᴛᴛᴏɴ ᴛʜᴀᴛ ʏᴏᴜ sᴇᴇ​</b>')
+            k = await query.message.edit('<b>👋Hey {message.from_user.mention}</b>\n\n<b>Sorry, No Movie/Series Related to the Given Word Was Found 🥺</b>\n\n<b>Please Go to Google and Confirm the Correct Spelling 🙏</b>\n\n<b>Click Here To 👉 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>\n\n<b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File :- @admins</b>')
             await asyncio.sleep(10)
             await k.delete()
 
