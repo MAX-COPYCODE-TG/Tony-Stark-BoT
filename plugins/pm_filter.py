@@ -1486,12 +1486,8 @@ async def pm_spoll_choker(msg):
             text=movie.strip(),
             callback_data=f"spolling#{user}#{k}",
         )
-    [ for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://google.com/search?q='),
-        InlineKeyboardButton(' 🔍 ʏᴀɴᴅᴇx 🔎', url=f'https://yandex.com/search?text=')
-    ],[
-        InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
-    ]]
+    ] for k, movie in enumerate(movielist)]
+    btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'spolling#{user}#close_spellcheck')])
     k=await msg.reply_photo(photo=SPELL_IMG, caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn)) 
     await asyncio.sleep(IMDB_DELET_TIME)
     await fuk.delete()
