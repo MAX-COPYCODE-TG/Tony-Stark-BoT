@@ -217,7 +217,12 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
+                reply_markup=InlineKeyboardMarkup(
+                    [[                          
+                      InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
+                    ]]
                 )
+            )
             filetype = msg.media
             file = getattr(msg, filetype)
             title = file.file_name
@@ -251,12 +256,10 @@ async def start(client, message):
         caption=f_caption, 
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
-            [
-                 [
-                  InlineKeyboardButton('✨️ Support Group ✨️', url="https://t.me/+iEbhY7mM4oE1OTVl")
-                 ]
-                ]
-            )
+            [[                          
+               InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
+            ]]
+                )
         )
                     
 
