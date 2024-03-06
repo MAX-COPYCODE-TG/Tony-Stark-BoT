@@ -1497,6 +1497,7 @@ async def pm_spoll_choker(msg):
     await fuk.delete()
     await msg.delete()
     return
+    
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
