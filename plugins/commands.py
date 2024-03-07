@@ -24,10 +24,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📢 ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs', url='https://t.me/cinema_flix_updates'),
-            InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩', url='https://t.me/+iEbhY7mM4oE1OTVl')
+            InlineKeyboardButton('𝐎𝐭𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐬', url='https://t.me/cinema_flix_updates'),
+            InlineKeyboardButton('𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
-            InlineKeyboardButton('〄 ᴄʜᴇᴄᴋ ᴍʏ ᴘᴍ ʙʀᴏ 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('〄 𝐂𝐡𝐞𝐜𝐤 𝐌𝐲 𝐏𝐦 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
