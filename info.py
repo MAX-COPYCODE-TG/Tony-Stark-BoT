@@ -55,7 +55,7 @@ WELCOM_PIC = environ.get("WELCOM_PIC", "https://graph.org/file/b386a561b6c4a1be4
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>ʜᴀɪ {user}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}</b>")
 PMFILTER = bool(environ.get("PMFILTER", True))
 G_FILTER = bool(environ.get("G_FILTER", True))
-SUPPORT_CHAT_ID = -1002004212841
+SUPPORT_CHAT_ID = -1002055541286
 BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", True))
 
 # Others
