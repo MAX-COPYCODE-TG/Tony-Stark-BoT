@@ -120,7 +120,14 @@ async def give_filter(client, message):
         if total_results == 0:
             return
         else:
-            return await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.\n\nKindly ask movies and series here ⬇\n@blaster_arena & @blaster_movies</b>")
+            return await message.reply_text(
+                    text=f"<b>{message.from_user.mention},</b>\n\n({str(total_results)}) ʀᴇsᴜʟᴛ ᴀʀᴇ ꜰᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ꜰᴏʀ ʏᴏᴜʀ sᴇᴀʀᴄʜ [{search}]",
+                    reply_markup=InlineKeyboardMarkup(
+                        [[
+                            InlineKeyboardButton('✧ ᴛᴀᴋᴇ ᴍᴏᴠɪᴇ ꜰʀᴏᴍ ʜᴇʀᴇ ✧', url ='https://telegram.me/AllRequestGroups')
+                        ]]
+                    )
+                )
             
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pv_filter(client, message):
