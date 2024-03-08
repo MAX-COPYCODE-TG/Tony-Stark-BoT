@@ -531,7 +531,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "pmfilep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
+                          InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/Mallu_Movie_Hub_Group'),
+                          InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url='https://t.me/cinema_flix_updates')
                         ]]
                     )
                 )                       
@@ -575,7 +576,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
+                          InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/Mallu_Movie_Hub_Group'),
+                          InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url='https://t.me/cinema_flix_updates')
                         ]]
                     )
                 )
@@ -615,7 +617,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[                          
-                  InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
+                  InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/Mallu_Movie_Hub_Group'),
+                  InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url='https://t.me/cinema_flix_updates')
                 ]]
             )
         )
