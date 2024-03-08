@@ -219,7 +219,8 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [[                          
-                      InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
+                      InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/Mallu_Movie_Hub_Group'),
+                      InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url='https://t.me/cinema_flix_updates')
                     ]]
                 )
             )
@@ -257,7 +258,8 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [[                          
-               InlineKeyboardButton("⚜️ᴋᴏᴍ ʟɪɴᴋꜱ⚜️", url='https://t.me/KOM_LINKS')
+               InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/Mallu_Movie_Hub_Group'),
+               InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url='https://t.me/cinema_flix_updates')
             ]]
            )
         )
