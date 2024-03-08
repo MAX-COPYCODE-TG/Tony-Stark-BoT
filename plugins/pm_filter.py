@@ -1441,6 +1441,7 @@ async def pm_spoll_choker(msg):
         InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")   
         ]]
         k = await msg.reply("I couldn't find any movie in that name.")
+        )
         await asyncio.sleep(8)
         await k.delete()
         return    
@@ -1474,6 +1475,7 @@ async def pm_spoll_choker(msg):
         InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")   
         ]]
         k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        )
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1497,6 +1499,7 @@ async def advantage_spell_chok(msg):
         InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")   
         ]]
         k = await msg.reply("I couldn't find any movie in that name.")
+        )
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1530,6 +1533,7 @@ async def advantage_spell_chok(msg):
         InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")   
         ]]
         k = await msg.reply(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...</b>")
+        )
         await asyncio.sleep(8)
         await k.delete()
         return
