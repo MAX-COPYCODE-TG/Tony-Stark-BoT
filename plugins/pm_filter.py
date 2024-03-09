@@ -1478,7 +1478,8 @@ async def pm_spoll_choker(msg):
         return
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'pmspolling#{user}#close_spellcheck')])
+    btn.append([[InlineKeyboardButton("🔮IMDB🔮", url=f"https://imdb.com/find?q={reply}"),InlineKeyboardButton("🪐 Reason", callback_data="reason")],[
+                 InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'pmspolling#{user}#close_spellcheck')]])
     await message.reply_photo(photo=imdb.get('poster'), caption="I couldn't find anything related to that. Check your spelling",
                     InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
 
@@ -1532,7 +1533,8 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'spolling#{user}#close_spellcheck')])
+    btn.append([[InlineKeyboardButton("🔮IMDB🔮", url=f"https://imdb.com/find?q={reply}"),InlineKeyboardButton("🪐 Reason", callback_data="reason")],[
+                 InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'pmspolling#{user}#close_spellcheck')]])
     await message.reply_photo(photo=imdb.get('poster'), caption="I couldn't find anything related to that. Check your spelling",
                     reply_markup=InlineKeyboardMarkup(btn))
 
