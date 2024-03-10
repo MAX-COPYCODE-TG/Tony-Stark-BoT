@@ -1528,7 +1528,7 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([[InlineKeyboardButton("🔮IMDB🔮", url=f"https://imdb.com/find?q={reply}"),InlineKeyboardButton("🪐 Reason", callback_data="reason")],[
                  InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'pmspolling#{user}#close_spellcheck')]])
-    k = await msg.reply_photo(photo=SPELL_IMG, caption="I couldn't find anything related to that. Check your spelling", reply_markup=InlineKeyboardMarkup(btn))
+    k = await msg.reply_photo(photo=SPELL_IMG, caption="I couldn't find anything related to that. Check your spelling", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
    
 
 
