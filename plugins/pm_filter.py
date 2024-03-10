@@ -660,7 +660,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝐒𝐡𝐚𝐫𝐞 𝐓𝐞𝐱𝐭', callback_data='sharetxt'),
             InlineKeyboardButton('𝐔𝐫𝐥 𝐒𝐡𝐨𝐫𝐭', callback_data='urlshort')
             ],[
-            InlineKeyboardButton('𝐉𝐬𝐨𝐧𝐞', callback_data='son'),
+            InlineKeyboardButton('𝐌𝐮𝐬𝐢𝐜', callback_data='song'),
             InlineKeyboardButton('𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐢𝐝', callback_data='sticker'),
             InlineKeyboardButton('𝐒𝐭𝐚𝐭𝐮𝐬', callback_data='stats')
             ],[
@@ -675,7 +675,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )      
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝐂𝐚𝐫𝐛𝐨𝐧​', callback_data='carb')
+            InlineKeyboardButton('𝐂𝐚𝐫𝐛𝐨𝐧​', callback_data='carb'),
+            InlineKeyboardButton('𝐉𝐬𝐨𝐧𝐞', callback_data='son')
             ],[
             InlineKeyboardButton('𝐓𝐭𝐬', callback_data='ttss'), 
             InlineKeyboardButton('𝐏𝐚𝐬𝐭𝐞', callback_data='pastes'),
@@ -953,13 +954,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "howtoues":
+    elif query.data == "song":
         buttons = [[
             InlineKeyboardButton('« 𝐁𝐚𝐜𝐤 »', callback_data='help2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HOWTOUES_TXT,
+            text=script.SONG_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
