@@ -55,7 +55,7 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "**𝙵𝙾𝚄𝙽𝙳 𝙽𝙾𝚃𝙷𝙸𝙽𝙶 𝙿𝙻𝙴𝙰𝚂𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝚃𝙷𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙾𝚁 𝚂𝙴𝙰𝚁𝙲𝙷 𝙰𝙽𝚈 𝙾𝚃𝙷𝙴𝚁 𝚂𝙾𝙽𝙶**"
+            "**tecvhyujikuu6fyhh**"
         )
         print(str(e))
         return
@@ -65,7 +65,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**JOIN ›› [🍁 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🍁](https://t.me/MLZ_BOTZ)**\n**𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [muѕíc вσч](https://t.me/CcommusicBot)**\n@MLZ_BOTZ**'
+        rep = '**𝗃𝗈𝗂𝗇 - [𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://t.me/Luttappi_Bot_Update)**\n**𝗉𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 - [𝖫𝖴𝖳𝖳𝖠𝖯𝖯𝖨 𝖡𝖮𝖳](https://t.me/Luttappi_RoBot)**\n@MLZ_BOTZ**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
