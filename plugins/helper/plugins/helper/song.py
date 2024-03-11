@@ -35,7 +35,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("**ѕєαrchíng чσur ѕσng...!**")
+    m = message.reply("**ѕ𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀 𝗒𝗈𝗎𝗋 ѕ𝗈𝗇𝗀...!**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -59,13 +59,13 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("**dσwnlσαdíng чσur ѕσng...!**")
+    m.edit("**𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝗒𝗈𝗎𝗋 ѕ𝗈𝗇𝗀...!**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**𝗃𝗈𝗂𝗇 - [𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://t.me/Luttappi_Bot_Update)**\n**𝗉𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 - [𝖫𝖴𝖳𝖳𝖠𝖯𝖯𝖨 𝖡𝖮𝖳](https://t.me/Luttappi_RoBot)**\n@MLZ_BOTZ**'
+        rep = '**𝗃𝗈𝗂𝗇 - [𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://t.me/Luttappi_Bot_Update)**\n**𝗉𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 - [𝖫𝖴𝖳𝖳𝖠𝖯𝖯𝖨 𝖡𝖮𝖳](https://t.me/Luttappi_RoBot)**\n@Luttappi_RoBot**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -73,7 +73,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit("**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**")
+        m.edit("**🚫 𝖤𝖱𝖱𝖮𝖱 🚫**")
         print(e)
 
     try:
@@ -99,7 +99,7 @@ async def vsong(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"**𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾** `{urlissed}`"
+        message.chat.id, f"**𝖿𝗂𝗇𝖽𝗂𝗇𝗀 𝗒𝗈𝗎𝗋 𝗏𝗂𝖽𝖾𝗈** `{urlissed}`"
     )
     if not urlissed:
         await pablo.edit("Invalid Command Syntax Please Check help Menu To Know More!")
@@ -132,14 +132,14 @@ async def vsong(client, message: Message):
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
     except Exception as e:
-        await event.edit(event, f"**𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙵𝚊𝚒𝚕𝚎𝚍 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗..♥️** \n**Error :** `{str(e)}`")
+        await event.edit(event, f"**𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖿𝖺𝗂𝗅𝖾𝖽 𝗉𝗅𝖾𝖺𝗌𝖾 𝗍𝗋𝗒 𝖺𝗀𝖺𝗂𝗇..♥️** \n**Error :** `{str(e)}`")
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
-**𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
-**Requested By :** {message.from_user.mention}
-**@ᴄᴄᴏᴍ_ᴛᴇᴀᴍ**
+**𝗍𝗂𝗍𝗅𝖾 :** [{thum}]({mo})
+**𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖡𝗒 :** {message.from_user.mention}
+**@Luttappi_RoBot**
 """
     await client.send_video(
         message.chat.id,
