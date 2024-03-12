@@ -350,7 +350,7 @@ By @{} """
 
 ‣ /share - ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴʏ ᴛᴇxᴛ ᴛᴏ sᴇɴᴅ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ"""
 
-    CUSTOM_FILE_CAPTION = """"<b><u>🚀𝐅𝐢𝐥𝐞 𝐍𝐚𝐦𝐞 </u>: <code><a href=https://t.me/Mallu_Movie_Hub_Group> {file_name} </a></code>
+    CUSTOM_FILE_CAPTION = """<b><u>🚀𝐅𝐢𝐥𝐞 𝐍𝐚𝐦𝐞 </u>: <code><a href=https://t.me/Mallu_Movie_Hub_Group> {file_name} </a></code>
    
   ◽️[𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩](https://t.me/Mallu_Movie_Hub_Group)  
   ◽️[𝐁𝐚𝐜𝐤𝐮𝐩 𝐆𝐫𝐨𝐮𝐩](https://t.me/+iEbhY7mM4oE1OTVl)
