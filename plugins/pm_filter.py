@@ -316,7 +316,15 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await query.message.edit('<b>⚠️ നിങ്ങൾ ചോദിച്ച മൂവി 𝖮𝖳𝖳 യിൽ റിലീസ് ആയിട്ടില്ല..!!⚡\n📌 𝖮𝖳𝖳 യിൽ മൂവി റിലീസ് അയാൽ മാത്രമെ ടെലഗ്രാമിൽ വരൂ..!!💥\n‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝖳𝗈 𝖠𝖽𝗆𝗂𝗇 ▶\n@chat_admin_robot</b>')
+        k = await query.message.reply_text(
+                    caption=(NOTFOUND),
+                    reply_markup=InlineKeyboardMarkup(
+                                            [[
+                                               InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
+                                            ]]  
+                    ),
+                    parse_mode='html' 
+          )                                      
         await asyncio.sleep(10)
         await k.delete()
 
