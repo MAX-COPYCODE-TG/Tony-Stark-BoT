@@ -1473,7 +1473,7 @@ async def pm_spoll_choker(msg):
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="✘ 𝐂𝐥𝐨𝐬𝐞 ✘", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    k = await msg.reply_photo(photo=SPELL_IMG, caption="<b>𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    k = await msg.reply_photo(photo=SPELL_IMG, caption="<b>➲ 𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>\n<b>➲ താങ്കൾ ഉദ്ദേശിച്ച മൂവി തായെ വല്ലതും ആണെങ്കിൽ അതിൽ ക്ലിക്ക് ചെയ്യുക...!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
 
 
 async def advantage_spell_chok(msg):
@@ -1526,7 +1526,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="✘ 𝐂𝐥𝐨𝐬𝐞 ✘", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    k = await msg.reply_photo(photo=SPELL_IMG, caption="<b>𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    k = await msg.reply_photo(photo=SPELL_IMG, caption="<b>➲ 𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>\n<b>➲ താങ്കൾ ഉദ്ദേശിച്ച മൂവി തായെ വല്ലതും ആണെങ്കിൽ അതിൽ ക്ലിക്ക് ചെയ്യുക...!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
    
 
 
