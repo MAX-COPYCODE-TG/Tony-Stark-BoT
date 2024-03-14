@@ -27,7 +27,7 @@ SPELL_CHECK = {}
 PM_SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
-SPELL_MODE = True
+NOTFOUND = "<b>⚠️ നിങ്ങൾ ചോദിച്ച മൂവി 𝖮𝖳𝖳 യിൽ റിലീസ് ആയിട്ടില്ല..!!⚡\n📌 𝖮𝖳𝖳 യിൽ മൂവി റിലീസ് അയാൽ മാത്രമെ ടെലഗ്രാമിൽ വരൂ..!!💥\n‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝖳𝗈 𝖠𝖽𝗆𝗂𝗇 ▶\n@chat_admin_robot</b>"
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
@@ -291,7 +291,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.reply_text(
-                        caption='<b>⚠️ നിങ്ങൾ ചോദിച്ച മൂവി 𝖮𝖳𝖳 യിൽ റിലീസ് ആയിട്ടില്ല..!!⚡\n📌 𝖮𝖳𝖳 യിൽ മൂവി റിലീസ് അയാൽ മാത്രമെ ടെലഗ്രാമിൽ വരൂ..!!💥\n‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝖳𝗈 𝖠𝖽𝗆𝗂𝗇 ▶\n@chat_admin_robot</b>')
+                        caption=(NOTFOUND),
                         reply_markup=InlineKeyboardMarkup(
                                                 [[
                                                    InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
