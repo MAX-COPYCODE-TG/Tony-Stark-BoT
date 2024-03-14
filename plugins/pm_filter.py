@@ -289,15 +289,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.reply_text(
-                        caption=(NOTFOUND),
-                        reply_markup=InlineKeyboardMarkup(
-                                                [[
-                                                   InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
-                                                ]]  
-                        ),
-                        parse_mode='html' 
-              )                                      
+            k = await query.message.edit('This Movie Not Found In DataBase')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -316,15 +308,7 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await query.message.reply_text(
-                    caption=(NOTFOUND),
-                    reply_markup=InlineKeyboardMarkup(
-                                            [[
-                                               InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
-                                            ]]  
-                    ),
-                    parse_mode='html' 
-          )                                      
+        k = await query.message.edit('This Movie Not Found In DataBase')
         await asyncio.sleep(10)
         await k.delete()
 
