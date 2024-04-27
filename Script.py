@@ -18,9 +18,11 @@ class script(object):
 <b>╭⎋ • ᴅᴀᴛᴀʙᴀsᴇ - ᴍᴏɴɢᴏ ᴅʙ</b>
 <b>╰⎋ • ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ - <a href=https://t.me/CopyCode_Bots>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>"""
 
-    SOURCE_TXT = """<b>𝖭𝖮𝖳𝖤:</b>
-<b>🔰𝗍𝗁𝗂𝗌 𝖻𝗈𝗍 𝗂𝗌 𝗇𝗈𝗍 𝖺𝗇 𝗈𝗉𝖾𝗇 𝗌𝗈𝗎𝗋𝖼𝖾 𝗉𝗋𝗈𝗃𝖾𝖼𝗍..!!</b>
-  <b>𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝖽 𝖡𝗒 : <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>"""
+    SOURCE_TXT = """<b>🔰 Note</b>
+<b>╭⊙  • ᴅᴇᴠ - ❶ - <a href=tg://settings>ᴍʏ ғʀɪᴇɴᴅ</b></a>
+<b>╰⊙  • ᴅᴇᴠ - ❷ - <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
+
+<b>▫️sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴄʟɪᴄᴋ ʜᴇʀᴇ » <a href=https://github.com/>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>"""
 
 
     FILE_TXT = """ʜᴇʟᴘ : <b>ғɪʟᴇ sᴛᴏʀᴇ ᴍᴏᴅᴜʟᴇ.../</b>
