@@ -17,6 +17,8 @@ class script(object):
 <b>╰⎋ • ʟᴀɴɢᴜᴀɢᴇ - ᴘʏᴛʜᴏɴ3</b>
 <b>╭⎋ • ᴅᴀᴛᴀʙᴀsᴇ - ᴍᴏɴɢᴏ ᴅʙ</b>
 <b>╰⎋ • ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ - <a href=https://t.me/CopyCode_Bots>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>"""
+    
+    OWR_TXT = """ <b>• Creator : <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>"""
 
     SOURCE_TXT = """<b>🔰 Note</b>
 <b>╭⊙  • ᴅᴇᴠ - ❶ - <a href=tg://settings>ᴍʏ ғʀɪᴇɴᴅ</b></a>
