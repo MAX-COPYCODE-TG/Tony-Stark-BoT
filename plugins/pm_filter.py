@@ -149,7 +149,7 @@ async def pm_next_page(bot, query):
     if not files:
         return
     
-    btn = [[InlineKeyboardButton(text=f"🚀 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
+    btn = [[InlineKeyboardButton(text=f"📁 ⟦{get_size(file.file_size)}⟧ -🧩- {file.file_name}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
                 
     if 0 < offset <= 10:
         off_set = 0
@@ -211,7 +211,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🚀 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
+                    text=f"📁 ⟦{get_size(file.file_size)}⟧ -🧩- {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -220,10 +220,10 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
+                    text=f"-🧩- {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"🚀 {get_size(file.file_size)}",
+                    text=f"📁 {get_size(file.file_size)}",
                     callback_data=f'files#{nxreq}#{file.file_id}',
                 ),
             ]
@@ -655,22 +655,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help2":
         buttons = [[
-            InlineKeyboardButton('𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡​', callback_data='tele'),
-            InlineKeyboardButton('𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐞𝐫​​​', callback_data='newdata')         
+            InlineKeyboardButton('Tᴇʟᴇɢʀᴀᴩʜ', callback_data='tele'),
+            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏᴇʀ​​​', callback_data='newdata')         
             ],[
-            InlineKeyboardButton('𝐂𝐨𝐧𝐧𝐞𝐜𝐭', callback_data='coct'),
-            InlineKeyboardButton('𝐅𝐢𝐥𝐭𝐞𝐫𝐬', callback_data='filters'),
-            InlineKeyboardButton('𝐄𝐱𝐭𝐫𝐚-𝐌𝐨𝐝𝐬', callback_data='extra')   
+            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛ', callback_data='coct'),
+            InlineKeyboardButton('Fɪʟᴛᴇʀꜱ', callback_data='filters'),
+            InlineKeyboardButton('Exᴛʀᴀ-Mᴏᴅꜱ', callback_data='extra')   
             ],[
-            InlineKeyboardButton('𝐒𝐡𝐚𝐫𝐞 𝐓𝐞𝐱𝐭', callback_data='sharetxt'),
-            InlineKeyboardButton('𝐔𝐫𝐥 𝐒𝐡𝐨𝐫𝐭', callback_data='urlshort')
+            InlineKeyboardButton('Sʜᴀʀᴇ Tᴇxᴛ', callback_data='sharetxt'),
+            InlineKeyboardButton('Uʀʟ Sʜᴏʀᴛ', callback_data='urlshort')
             ],[
-            InlineKeyboardButton('𝐌𝐮𝐬𝐢𝐜', callback_data='song'),
-            InlineKeyboardButton('𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐢𝐝', callback_data='sticker'),
-            InlineKeyboardButton('𝐒𝐭𝐚𝐭𝐮𝐬', callback_data='stats')
+            InlineKeyboardButton('Mᴜꜱɪᴄ', callback_data='song'),
+            InlineKeyboardButton('Sᴛɪᴄᴋᴇʀ Iᴅ', callback_data='sticker'),
+            InlineKeyboardButton('Sᴛᴀᴛᴜꜱ', callback_data='stats')
             ],[
-            InlineKeyboardButton('𝐇𝐨𝐦𝐞', callback_data='start'), 
-            InlineKeyboardButton('𝐍𝐞𝐱𝐭 »', callback_data='help')  
+            InlineKeyboardButton('◀️ Bᴀᴄᴋ ', callback_data='start'), 
+            InlineKeyboardButton(' Nᴇxᴛ ▶️', callback_data='help')  
          ]] 
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
@@ -680,19 +680,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )      
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝐂𝐚𝐫𝐛𝐨𝐧​', callback_data='carb'),
-            InlineKeyboardButton('𝐉𝐬𝐨𝐧𝐞', callback_data='son')
+            InlineKeyboardButton('Cᴀʀʙᴏɴ', callback_data='carb'),
+            InlineKeyboardButton('Jꜱᴏɴᴇ', callback_data='son')
             ],[
-            InlineKeyboardButton('𝐓𝐭𝐬', callback_data='ttss'), 
-            InlineKeyboardButton('𝐏𝐚𝐬𝐭𝐞', callback_data='pastes'),
-            InlineKeyboardButton('𝐏𝐮𝐫𝐠𝐞', callback_data='purges')                          
+            InlineKeyboardButton('Tᴛꜱ', callback_data='ttss'), 
+            InlineKeyboardButton('Pᴀꜱᴛᴇ', callback_data='pastes'),
+            InlineKeyboardButton('Pᴜʀɢᴇ', callback_data='purges')                          
             ],[
-            InlineKeyboardButton('𝐙𝐨𝐦𝐛𝐢𝐞​', callback_data='zombies'),
-            InlineKeyboardButton('𝐅𝐨𝐧𝐭​', callback_data='fond'),
+            InlineKeyboardButton('Zᴏᴍʙɪᴇ', callback_data='zombies'),
+            InlineKeyboardButton('Fᴏɴᴛ', callback_data='fond'),
             ],[
-            InlineKeyboardButton('𝐌𝐮𝐭𝐞', callback_data='restric'),
-            InlineKeyboardButton('𝐃𝐞𝐩𝐥𝐨𝐲', callback_data='deploy'),
-            InlineKeyboardButton('𝐏𝐢𝐧', callback_data='pin')
+            InlineKeyboardButton('Mᴜᴛᴇ', callback_data='restric'),
+            InlineKeyboardButton('Dᴇᴩʟᴏʏ', callback_data='deploy'),
+            InlineKeyboardButton('Pɪɴ', callback_data='pin')
             ],[
             InlineKeyboardButton('◀️ Bᴀᴄᴋ', callback_data='help2'),
             InlineKeyboardButton(' Cʟᴏꜱᴇ 🚩', callback_data='close_data')
