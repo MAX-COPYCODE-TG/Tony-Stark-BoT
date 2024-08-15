@@ -636,7 +636,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [  
             InlineKeyboardButton('⇌ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩꜱ ⇌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('𝐒𝐞𝐚𝐫𝐜𝐡', callback_data='owner'),
+            InlineKeyboardButton('𝐒𝐞𝐚𝐫𝐜𝐡', callback_data='owr'),
             InlineKeyboardButton('𝐇𝐞𝐥𝐩', callback_data='help2')
         ], [
             InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about')
@@ -953,13 +953,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "owner":
+    elif query.data == "owr":
         buttons = [[
             InlineKeyboardButton('◀️ Bᴀᴄᴋ ', callback_data='start')
        ]]
        reply_markup = InlineKeyboardMarkup(buttons)
        await query.message.edit_text(
-           text=script.OWNER_TXT,
+           text=script.OWR_TXT,
            reply_markup=reply_markup,
            parse_mode=enums.ParseMode.HTML
         )
