@@ -956,12 +956,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owr":
         buttons = [[
             InlineKeyboardButton('◀️ Bᴀᴄᴋ ', callback_data='start')
-       ]]
-       reply_markup = InlineKeyboardMarkup(buttons)
-       await query.message.edit_text(
-           text=script.OWR_TXT,
-           reply_markup=reply_markup,
-           parse_mode=enums.ParseMode.HTML
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OWR_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "song":
         buttons = [[
