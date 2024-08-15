@@ -18,13 +18,13 @@ class script(object):
 <b>╭⎋ • DataBase - MongoDB</b>
 <b>╰⎋ • Bot  Update - <a href=https://t.me/CopyCode_Bots>Click Here</b></a>"""
     
-    OWR_TXT = """ <b>• Creator : <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>"""
+    OWR_TXT = """ <b>🚸 Owner Details</b>
+   <b> • Full Name : 🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b>
+   <b> • Username  : @TG_x_filter</b>
+   <b> • Permanent Dm Link : <a href=https://t.me/TG_x_filter>Click Here</b></a>"""
 
     SOURCE_TXT = """<b>🔰 Note</b>
-<b>╭⊙  • ᴅᴇᴠ - ❶ - <a href=tg://settings>ᴍʏ ғʀɪᴇɴᴅ</b></a>
-<b>╰⊙  • ᴅᴇᴠ - ❷ - <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
-
-<b>▫️sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴄʟɪᴄᴋ ʜᴇʀᴇ » <a href=https://github.com/>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>"""
+   <b> • This bot is an open source project.!</b>"""
 
 
     FILE_TXT = """ʜᴇʟᴘ : <b>ғɪʟᴇ sᴛᴏʀᴇ ᴍᴏᴅᴜʟᴇ.../</b>
