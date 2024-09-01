@@ -295,7 +295,20 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit(
+            k = await query.message.reply_photo(
+                   photo=(NOT_IMG), 
+                   caption=(NOTFOUND),
+                   reply_markup=InlineKeyboardMarkup(
+                                           [[
+                                                 InlineKeyboardButton("💬 Support", url="https://t.me/cinema_flix_updates"),
+                                                 InlineKeyboardButton("⚡Updates", url="https://t.me/cinema_flix_updates")
+                                             ],[
+                                                 InlineKeyboardButton("🏅 Google Search 🏅", url="http://Google.com")
+                                             ]] 
+                     ),
+                     parse_mode='html'
+              )
+              
             await asyncio.sleep(10)
             await k.delete()
 
