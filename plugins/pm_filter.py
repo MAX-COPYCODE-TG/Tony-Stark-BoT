@@ -294,8 +294,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            btn.append([InlineKeyboardButton("Google Search", url='https/www.google.com')])
-            k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase', reply_markup=InlineKeyboardMarkup(btn)
+            k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase', reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/filesearchok")]])
             await asyncio.sleep(10)
             await k.delete()
 
