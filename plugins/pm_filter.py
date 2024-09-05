@@ -27,8 +27,6 @@ SPELL_CHECK = {}
 PM_SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
-NOT_IMG = "https://te.legra.ph/file/982cecf95acc120b6465b.jpg"
-NOTFOUND = "<b>👋𝖧𝖾𝗒 <a href=tg://settings>𝖥𝗋𝗂𝖾𝗇𝖽💞</a></b>\n\n<b>𝖲𝗈𝗋𝗋𝗒, 𝖭𝗈 𝖬𝗈𝗏𝗂𝖾/𝖲𝖾𝗋𝗂𝖾𝗌 𝖱𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖾 𝖦𝗂𝗏𝖾𝗇 𝖶𝗈𝗋𝖽 𝖶𝖺𝗌 𝖥𝗈𝗎𝗇𝖽😔</b>\n\n<b>𝖯𝗅𝖾𝖺𝗌𝖾 𝖦𝗈 𝗍𝗈 𝖦𝗈𝗈𝗅𝗀𝖾 𝖺𝗇𝖽 𝖢𝗈𝗇𝖿𝗂𝗋𝗆 𝗍𝗁𝖾 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀🙏</b>\n\n<b>𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾 𝖳𝗈 👉 <a href="https://www.google.com">🔍 𝖲𝖾𝖺𝗋𝖼𝗁 🔎</a></b>\n\n<b>✍𝖮𝗋 𝖸𝗈𝗎𝗋 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝖨𝗌 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖱𝖾𝗉𝗈𝗋𝗍 𝖳𝗈 𝖠𝖽𝗆𝗂𝗇𝗌 𝖥𝗈𝗋 𝖠𝖽𝖽 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖥𝗂𝗅𝖾 :- @admins</b>"
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
@@ -296,20 +294,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.reply_photo(
-                   photo=(NOT_IMG), 
-                   caption=(NOTFOUND),
-                   reply_markup=InlineKeyboardMarkup(
-                                           [[
-                                                 InlineKeyboardButton("💬 Support", url="https://t.me/cinema_flix_updates"),
-                                                 InlineKeyboardButton("⚡Updates", url="https://t.me/cinema_flix_updates")
-                                             ],[
-                                                 InlineKeyboardButton("🏅 Google Search 🏅", url="http://Google.com")
-                                             ]] 
-                     ),
-                     parse_mode='html'
-              )
-              
+            k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase') 
             await asyncio.sleep(10)
             await k.delete()
 
@@ -328,20 +313,7 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await query.message.reply_photo(
-                   photo=(NOT_IMG), 
-                   caption=(NOTFOUND),
-                   reply_markup=InlineKeyboardMarkup(
-                                           [[
-                                                 InlineKeyboardButton("💬 Support", url="https://t.me/cinema_flix_updates"),
-                                                 InlineKeyboardButton("⚡Updates", url="https://t.me/cinema_flix_updates")
-                                             ],[
-                                                 InlineKeyboardButton("🏅 Google Search 🏅", url="http://Google.com")
-                                             ]] 
-                     ),
-                     parse_mode='html'
-              )
-        
+        k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase') 
             await asyncio.sleep(10)
             await k.delete()
 
