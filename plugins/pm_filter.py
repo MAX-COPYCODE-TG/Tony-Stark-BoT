@@ -299,6 +299,7 @@ async def advantage_spoll_choker(bot, query):
             await asyncio.sleep(10)
             await k.delete()
 
+
 @Client.on_callback_query(filters.regex(r"^pmspolling"))
 async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
@@ -314,9 +315,10 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase') 
-            await asyncio.sleep(10)
-            await k.delete()
+        btn.append([InlineKeyboardButton("Google Search", url='https/www.google.com')])
+        k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase', reply_markup=InlineKeyboardMarkup(btn)
+        await asyncio.sleep(10)
+        await k.delete()
 
 
 @Client.on_callback_query()
