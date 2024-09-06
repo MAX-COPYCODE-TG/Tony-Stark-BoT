@@ -1415,15 +1415,15 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention},\n\n✨ 𝖧𝖾𝗋𝖾'𝗌 𝗍𝗁𝖾 𝗋𝖾𝗌𝗎𝗅𝗍 𝖿𝗈𝗋 : {search}\n\n🪁𝖴𝗉𝗅𝗈𝖺𝖽 𝖻𝗒 : {message.chat.title}\n\n☟ 𝖸𝗈𝗎𝗋 𝖥𝗂𝗅𝖾𝗌 𝗂𝗌 𝖱𝖾𝖺𝖽𝗒 𝖭𝗈𝗐 ☟</b>"
     if imdb and imdb.get('poster'):
         try:
-            await message.reply_photo(photo=NOR_IMG, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await hehe.delete()       
+            await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))             
+            hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
             await asyncio.sleep(IMDB_DELET_TIME)
-            await hmm.delete()  
+            await hmm.delete()            
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -1433,7 +1433,7 @@ async def auto_filter(client, msg, spoll=False):
         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
-    if spoll:
+    if pmspoll:
         await msg.message.delete()
 
 async def pm_spoll_choker(msg):
