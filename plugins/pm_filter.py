@@ -232,13 +232,7 @@ async def next_page(bot, query):
         
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔮 {search} 🔮', 'dupe')
-        ]
-    )
-    btn.insert(1, 
-        [
-            InlineKeyboardButton(f"• Bot Pm", url=f"https://t.me/{temp.U_NAME}"),
-            InlineKeyboardButton(f"• Total Files: {len(btn)}", callback_data="files")
+            InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url="https://t.me/cinema_flix_updates")
         ]
     )    
 
@@ -1366,13 +1360,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔮 {search} 🔮', 'dupe')
-        ]
-    )
-    btn.insert(1, 
-        [
-            InlineKeyboardButton(f"• Bot Pm", url=f"https://t.me/{temp.U_NAME}"),
-            InlineKeyboardButton(f"• Total Files: {len(btn)}", callback_data="files")
+            InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url="https://t.me/cinema_flix_updates")
         ]
     )
     if offset != "":
@@ -1457,7 +1445,7 @@ async def pm_spoll_choker(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b>• I couldn't find anything related to that. Check your spelling.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
         return    
@@ -1486,14 +1474,14 @@ async def pm_spoll_choker(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b>• I couldn't find anything related to that. Check your spelling.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="✘ 𝐂𝐥𝐨𝐬𝐞 ✘", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    k = await msg.reply_photo(photo=SPELL_IMG, caption="<b>➲ 𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>\n<b>➲ താങ്കൾ ഉദ്ദേശിച്ച മൂവി തായെ വല്ലതും ആണെങ്കിൽ അതിൽ ക്ലിക്ക് ചെയ്യുക...!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    k = await msg.reply("<b>• 𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
 
 
 async def advantage_spell_chok(msg):
@@ -1505,7 +1493,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b>• I couldn't find anything related to that. Check your spelling.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1534,7 +1522,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b>• I couldn't find anything related to that. Check your spelling.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1546,7 +1534,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="✘ 𝐂𝐥𝐨𝐬𝐞 ✘", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    k = await msg.reply_photo(photo=SPELL_IMG, caption="<b>➲ 𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>\n<b>➲ താങ്കൾ ഉദ്ദേശിച്ച മൂവി തായെ വല്ലതും ആണെങ്കിൽ അതിൽ ക്ലിക്ക് ചെയ്യുക...!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    k = await msg.reply("<b>• 𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝖽𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗋𝖾..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
    
 
 
