@@ -159,19 +159,19 @@ async def pm_next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📖 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]                                  
+            [InlineKeyboardButton("◀️ 𝐁𝒂𝒄𝒌", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"🔰 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]                                  
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"📖 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Nᴇxᴛ ▶️", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🔰 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("𝐍𝒆𝒙𝒕 ▶️", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📖 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("Nᴇxᴛ ▶️", callback_data=f"pmnext_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("◀️ 𝐁𝒂𝒄𝒌", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🔰 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("𝐍𝒆𝒙𝒕 ▶️", callback_data=f"pmnext_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -232,7 +232,7 @@ async def next_page(bot, query):
         
     btn.insert(0, 
         [
-            InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url="https://t.me/cinema_flix_updates")
+            InlineKeyboardButton("💢 𝐉𝒐𝒊𝒏 𝐎𝒖𝒓 𝐌𝒂𝒊𝒏 𝐂𝒉𝒂𝒏𝒏𝒆𝒍 💢", url="https://t.me/cinema_flix_updates")
         ]
     )    
 
@@ -244,20 +244,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📖 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
+            [InlineKeyboardButton("◀️ 𝐁𝒂𝒄𝒌", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"🔰 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"📖 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Nᴇxᴛ ▶️", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🔰 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("𝐍𝒆𝒙𝒕 ▶️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📖 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("Nᴇxᴛ ▶️", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("◀️ 𝐁𝒂𝒄𝒌", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🔰 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("𝐍𝒆𝒙𝒕 ▶️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -634,13 +634,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":   
         buttons = [[
         ], [  
-            InlineKeyboardButton('⇌ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩꜱ ⇌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⇌ 𝐀𝒅𝒅 𝐌𝒆 𝐓𝒐 𝐘𝒐𝒖𝒓 𝐆𝒓𝒐𝒖𝒑 ⇌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎗 Oᴡɴᴇʀ', callback_data='owr'),
-            InlineKeyboardButton('☃️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('☃️ 𝐎𝒘𝒏𝒆𝒓', callback_data='owr'),
+            InlineKeyboardButton('𝐒𝒖𝒑𝒑𝒐𝒓𝒕 💬', url='https://t.me/cinema_flix_updates')
         ], [
-            InlineKeyboardButton('✦ 𝖧ᴇʟᴩ ✦', callback_data='help2'),
-            InlineKeyboardButton('✦ 𝖠ʙᴏᴜᴛ ✦', callback_data='about')
+            InlineKeyboardButton('✦ 𝐇𝒆𝒍𝒑 ✦', callback_data='help2'),
+            InlineKeyboardButton('✦ 𝐀𝒃𝒐𝒖𝒕 ✦', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -650,22 +650,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help2":
         buttons = [[
-            InlineKeyboardButton('Tᴇʟᴇɢʀᴀᴩʜ', callback_data='tele'),
-            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏᴇʀ​​​', callback_data='newdata')         
+            InlineKeyboardButton('𝐓𝒆𝒍𝒆𝒈𝒓𝒂𝒑𝒉', callback_data='tele'),
+            InlineKeyboardButton('𝐅𝒊𝒍𝒆 𝐒𝒕𝒐𝒆𝒓​​​', callback_data='newdata')         
             ],[
-            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛ', callback_data='coct'),
-            InlineKeyboardButton('Fɪʟᴛᴇʀꜱ', callback_data='filters'),
-            InlineKeyboardButton('Exᴛʀᴀ-Mᴏᴅꜱ', callback_data='extra')   
+            InlineKeyboardButton('𝐂𝒐𝒏𝒏𝒆𝒄𝒕', callback_data='coct'),
+            InlineKeyboardButton('𝐅𝒊𝒍𝒕𝒆𝒓𝒔', callback_data='filters'),
+            InlineKeyboardButton('𝐄𝒙𝒕𝒓𝒂-𝐌𝒐𝒅𝒔', callback_data='extra')   
             ],[
-            InlineKeyboardButton('Sʜᴀʀᴇ Tᴇxᴛ', callback_data='sharetxt'),
-            InlineKeyboardButton('Uʀʟ Sʜᴏʀᴛ', callback_data='urlshort')
+            InlineKeyboardButton('𝐒𝒉𝒂𝒓𝒆 𝐓𝒆𝒙𝒕', callback_data='sharetxt'),
+            InlineKeyboardButton('𝐔𝒓𝒍 𝐒𝒉𝒐𝒓𝒕', callback_data='urlshort')
             ],[
-            InlineKeyboardButton('Mᴜꜱɪᴄ', callback_data='song'),
-            InlineKeyboardButton('Sᴛɪᴄᴋᴇʀ Iᴅ', callback_data='sticker'),
-            InlineKeyboardButton('Sᴛᴀᴛᴜꜱ', callback_data='stats')
+            InlineKeyboardButton('𝐌𝒖𝒔𝒊𝒄', callback_data='song'),
+            InlineKeyboardButton('𝐒𝒕𝒊𝒄𝒌𝒆𝒓 𝒊𝒅', callback_data='sticker'),
+            InlineKeyboardButton('𝐒𝒕𝒂𝒕𝒖𝒔', callback_data='stats')
             ],[
-            InlineKeyboardButton('◀️ Bᴀᴄᴋ ', callback_data='start'), 
-            InlineKeyboardButton(' Nᴇxᴛ ▶️', callback_data='help')  
+            InlineKeyboardButton('<= 𝐁𝒂𝒄𝒌', callback_data='start'), 
+            InlineKeyboardButton('𝐍𝒆𝒙𝒕 =>', callback_data='help')  
          ]] 
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
