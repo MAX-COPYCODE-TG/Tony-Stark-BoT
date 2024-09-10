@@ -1466,7 +1466,7 @@ async def pm_spoll_choker(msg):
            InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
            InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
         ]]
-        k = await msg.reply("<b>⦁ 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
+        k = await msg.reply("<b>⦁ 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>", reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(8)
         await k.delete()
         return    
@@ -1499,7 +1499,7 @@ async def pm_spoll_choker(msg):
            InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
            InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
         ]]
-        k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
+        k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>", reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1508,7 +1508,7 @@ async def pm_spoll_choker(msg):
         InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
         InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
     ]]
-    k = await msg.reply("<b>❕𝘚𝘱𝘦𝘭𝘭𝘪𝘯𝘨 𝘔𝘪𝘴𝘵𝘢𝘬𝘦 𝘉𝘳𝘰❕\n\n⦁ 𝘋𝘰𝘯'𝘵 𝘸𝘰𝘳𝘳𝘺 𝘤𝘩𝘰𝘰𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘰𝘯𝘦 𝘣𝘦𝘭𝘰𝘸..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    k = await msg.reply("<b>❕𝘚𝘱𝘦𝘭𝘭𝘪𝘯𝘨 𝘔𝘪𝘴𝘵𝘢𝘬𝘦 𝘉𝘳𝘰❕\n\n⦁ 𝘋𝘰𝘯'𝘵 𝘸𝘰𝘳𝘳𝘺 𝘤𝘩𝘰𝘰𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘰𝘯𝘦 𝘣𝘦𝘭𝘰𝘸..!</b>", reply_markup=InlineKeyboardMarkup(btn))
 
 
 async def advantage_spell_chok(msg):
@@ -1524,7 +1524,7 @@ async def advantage_spell_chok(msg):
            InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
            InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
         ]]
-        k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
+        k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>", reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1557,7 +1557,7 @@ async def advantage_spell_chok(msg):
            InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
            InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
         ]]
-        k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
+        k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>", reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1566,7 +1566,7 @@ async def advantage_spell_chok(msg):
            InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
            InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
     ]]
-    k = await msg.reply("<b>❕𝘚𝘱𝘦𝘭𝘭𝘪𝘯𝘨 𝘔𝘪𝘴𝘵𝘢𝘬𝘦 𝘉𝘳𝘰❕\n\n⦁ 𝘋𝘰𝘯'𝘵 𝘸𝘰𝘳𝘳𝘺 𝘤𝘩𝘰𝘰𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘰𝘯𝘦 𝘣𝘦𝘭𝘰𝘸..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    k = await msg.reply("<b>❕𝘚𝘱𝘦𝘭𝘭𝘪𝘯𝘨 𝘔𝘪𝘴𝘵𝘢𝘬𝘦 𝘉𝘳𝘰❕\n\n⦁ 𝘋𝘰𝘯'𝘵 𝘸𝘰𝘳𝘳𝘺 𝘤𝘩𝘰𝘰𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘰𝘯𝘦 𝘣𝘦𝘭𝘰𝘸..!</b>", reply_markup=InlineKeyboardMarkup(btn))
    
 
 
