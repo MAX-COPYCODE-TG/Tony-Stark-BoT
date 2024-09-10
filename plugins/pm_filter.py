@@ -1462,6 +1462,10 @@ async def pm_spoll_choker(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
+       btn = [[
+           InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
+           InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
+        ]]
         k = await msg.reply("<b>⦁ 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
@@ -1491,13 +1495,19 @@ async def pm_spoll_choker(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
+       btn = [[
+           InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
+           InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
+        ]]
         k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
     PM_SPELL_CHECK[msg.id] = movielist
-    btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="✘ 𝘊𝘭𝘰𝘴𝘦 ✘", callback_data=f'pmspolling#{user}#close_spellcheck')])
+    btn = [[
+        InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
+        InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
+    ]]
     k = await msg.reply("<b>❕𝘚𝘱𝘦𝘭𝘭𝘪𝘯𝘨 𝘔𝘪𝘴𝘵𝘢𝘬𝘦 𝘉𝘳𝘰❕\n\n⦁ 𝘋𝘰𝘯'𝘵 𝘸𝘰𝘳𝘳𝘺 𝘤𝘩𝘰𝘰𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘰𝘯𝘦 𝘣𝘦𝘭𝘰𝘸..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
 
 
@@ -1510,6 +1520,10 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
+        btn = [[
+           InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
+           InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
+        ]]
         k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
@@ -1539,18 +1553,19 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
+        btn = [[
+           InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
+           InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
+        ]]
         k = await msg.reply("<b>• 𝘐 𝘤𝘰𝘶𝘭𝘥𝘯'𝘵 𝘧𝘪𝘯𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘳𝘦𝘭𝘢𝘵𝘦𝘥 𝘵𝘰 𝘵𝘩𝘢𝘵. 𝘊𝘩𝘦𝘤𝘬 𝘺𝘰𝘶𝘳 𝘴𝘱𝘦𝘭𝘭𝘪𝘯𝘨.!!</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
     SPELL_CHECK[msg.id] = movielist
     btn = [[
-        InlineKeyboardButton(
-            text=movie.strip(),
-            callback_data=f"spolling#{user}#{k}",
-        )
-    ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="✘ 𝘊𝘭𝘰𝘴𝘦 ✘", callback_data=f'pmspolling#{user}#close_spellcheck')])
+           InlineKeyboardButton('🔍 google ', url=f'https://google.com/search?q='),
+           InlineKeyboardButton(' yandex 🔎', url=f'https://yandex.com/search?text=')
+    ]]
     k = await msg.reply("<b>❕𝘚𝘱𝘦𝘭𝘭𝘪𝘯𝘨 𝘔𝘪𝘴𝘵𝘢𝘬𝘦 𝘉𝘳𝘰❕\n\n⦁ 𝘋𝘰𝘯'𝘵 𝘸𝘰𝘳𝘳𝘺 𝘤𝘩𝘰𝘰𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘰𝘯𝘦 𝘣𝘦𝘭𝘰𝘸..!</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
    
 
