@@ -49,7 +49,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
-START_MESSAGE = environ.get('START_MESSAGE', '<b>𝖧𝖾𝗅𝗅𝗈{user}!!</b>\n\n<b>𝖨𝗆 𝖠𝗎𝗍𝗈-𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖨 𝖼𝖺𝗇 𝖲𝖾𝗇𝖽 𝗒𝗈𝗎 𝖬𝗈𝗏𝗂𝖾 𝗂𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌.!!</b>\n\n<b>𝖨 𝖼𝖺𝗇 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝗆𝗈𝗏𝗂𝖾𝗌 𝖺𝗇𝖽 𝗐𝖾𝖻-𝗌𝖾𝗋𝗂𝖾𝗌 𝗂𝗇 𝖸𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌. 𝖨𝗍'𝗌 𝖤𝖺𝗌𝗒 𝗍𝗈 𝖴𝗌𝖾 𝗆𝖾 𝖩𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 𝖺𝗌 𝖺𝖽𝗆𝗂𝗇 𝗍𝗁𝖺𝗍'𝗌 𝖺𝗅𝗅 𝗂 𝗐𝗂𝗅𝗅 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 𝖳𝗁𝖾𝗋𝖾.!!</b>')
+START_MESSAGE = environ.get('START_MESSAGE', '<b>𝖧𝖾𝗅𝗅𝗈{user}!!</b>\n\n<b>𝖨𝗆 𝖠𝗎𝗍𝗈-𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖨 𝖼𝖺𝗇 𝖲𝖾𝗇𝖽 𝗒𝗈𝗎 𝖬𝗈𝗏𝗂𝖾 𝗂𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌.!!</b>\n\n<b>𝖨 𝖼𝖺𝗇 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝗆𝗈𝗏𝗂𝖾𝗌 𝖺𝗇𝖽 𝗐𝖾𝖻-𝗌𝖾𝗋𝗂𝖾𝗌 𝗂𝗇 𝖸𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌. 𝖨𝗍𝗌 𝖤𝖺𝗌𝗒 𝗍𝗈 𝖴𝗌𝖾 𝗆𝖾 𝖩𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 𝖺𝗌 𝖺𝖽𝗆𝗂𝗇 𝗍𝗁𝖺𝗍𝗌 𝖺𝗅𝗅 𝗂 𝗐𝗂𝗅𝗅 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 𝖳𝗁𝖾𝗋𝖾.!!</b>')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "👋𝖧𝖾𝗒 {query}! ഇത് നിന്റെ അല്ല.....🥴")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '<b>𝘊𝘭𝘪𝘤𝘬 𝘰𝘯  "🔌 𝘑𝘰𝘪𝘯 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 🔌" 𝘣𝘶𝘵𝘵𝘰𝘯 𝘣𝘦𝘭𝘰𝘸 𝘢𝘯𝘥 𝘫𝘰𝘪𝘯 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 𝘢𝘯𝘥 𝘵𝘩𝘦𝘯 𝘱𝘳𝘦𝘴𝘴 "🔄 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯 🔄" 𝘣𝘶𝘵𝘵𝘰𝘯 𝘵𝘰 𝘨𝘦𝘵 𝘵𝘩𝘦 𝘮𝘰𝘷𝘪𝘦.!!\n\nതാഴെ കാണുന്ന "🔌 𝘑𝘰𝘪𝘯 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 🔌" എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം "🔄 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯 🔄" എന്ന ബട്ടണിൽ അമർത്തിയാൽ സിനിമ ലഭിക്കുന്നതാണ്.!!</b>')
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://graph.org/file/b386a561b6c4a1be48411.jpg")
