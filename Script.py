@@ -2,7 +2,7 @@ class script(object):
     HELP_TXT = """<b>𝖧𝖺𝗒 {}
 𝖠𝗅𝗅 𝖭𝖾𝗐 𝖫𝖺𝗍𝖾𝗌𝗍 𝖥𝖾𝖺𝗍𝗎𝗋𝖾𝗌 𝖶𝗂𝗅𝗅 𝖡𝖾 𝖠𝖽𝖽𝖾𝖽 𝖥𝗈𝗋 𝖤𝖺𝗌𝗒 𝖠𝖼𝖼𝖾𝗌𝗌.!!</b>"""
 
-    ABOUT_TXT = """<b>⚠️ 𝖠𝖻𝗈𝗎𝗍 𝖬𝖾</b>
+    ABOUT_TXT = """<b>⚠️ 𝖠𝖻𝗈𝗎𝗍 𝖬𝖾 ⚠️</b>
     
 <b> 🤖 𝖬𝗒 𝗇𝖺𝗆𝖾: {}</b>
 
@@ -16,7 +16,7 @@ class script(object):
 
 <b> 📢 𝖡𝗈𝗍  𝖴𝗉𝖽𝖺𝗍𝖾: <a href=https://t.me/CopyCode_Bots>𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾</b></a>"""
     
-    OWR_TXT = """ <b>🚸 𝖮𝗐𝗇𝖾𝗋 𝖣𝖾𝗍𝖺𝗂𝗅𝗌</b>
+    OWR_TXT = """ <b>🚸 𝖮𝗐𝗇𝖾𝗋 𝖣𝖾𝗍𝖺𝗂𝗅𝗌 🚸</b>
     
    <b>○ 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋𝗌 : <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
    """
@@ -169,7 +169,7 @@ class script(object):
 • /delallg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ</code>
 """
 
-    STATUS_TXT = """<b>📊 𝖲𝗍𝖺𝗍𝗎𝗌 𝖡𝗈𝖺𝗋𝖽</b>
+    STATUS_TXT = """<b>📊 𝖲𝗍𝖺𝗍𝗎𝗌 𝖡𝗈𝖺𝗋𝖽 📊</b>
     
 <b> 📁 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌: <code>{}</code></b>
 
@@ -177,7 +177,7 @@ class script(object):
 
 <b> ♻️ 𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌: <code>{}</code></b>
 
-<b> 🔴 🗃 𝖴𝗌𝖾𝖽 𝖲𝗍𝗈𝗋𝖺𝗀𝖾: <code>{}</code> 𝖬𝖡</b>"""
+<b> 🗃 𝖴𝗌𝖾𝖽 𝖲𝗍𝗈𝗋𝖺𝗀𝖾: <code>{}</code> 𝖬𝖡</b>"""
     LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
     
 <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}</b>
