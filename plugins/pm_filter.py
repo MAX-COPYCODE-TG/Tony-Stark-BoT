@@ -641,16 +641,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":   
         buttons = [[
         ], [  
-            InlineKeyboardButton('✗ 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 ✗', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✗ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ✗', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('𝘐𝘯𝘭𝘪𝘯𝘦 𝘚𝘦𝘢𝘳𝘤𝘩', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘓𝘪𝘯𝘬𝘴', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('𝖬𝗈𝗏𝗂𝖾 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/cinema_flix_updates')
         ], [
-            InlineKeyboardButton('𝘏𝘦𝘭𝘱', callback_data='help2'),
-            InlineKeyboardButton('𝘊𝘰𝘯𝘵𝘢𝘤𝘵', callback_data='owr'),
-            InlineKeyboardButton('𝘈𝘣𝘰𝘶𝘵', callback_data='about')
+            InlineKeyboardButton('𝖧𝖾𝗅𝗉', callback_data='help2'),
+            InlineKeyboardButton('𝖮𝗐𝗇𝖾𝗋 𝗂𝗇𝖿𝗈', callback_data='owr'),
+            InlineKeyboardButton('𝖠𝖻𝗈𝗎𝗍', callback_data='about')
         ], [
-            InlineKeyboardButton('🍾 𝘔𝘰𝘷𝘪𝘦 𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘎𝘳𝘰𝘶𝘱 🍾', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('🍾 𝖬𝗈𝗏𝗂𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖦𝗋𝗈𝗎𝗉 🍾', url='https://t.me/cinema_flix_updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -950,8 +950,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "deploy":
         buttons = [[
-            InlineKeyboardButton('㊂ 𝖣𝖾𝗏 ❶', url='https://t.me/TG_x_filter'),
-            InlineKeyboardButton('㊂ 𝖣𝖾𝗏 ❷', url='https://t.me/dxfilter')
+            InlineKeyboardButton('𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋', url='tg://settings'),
+            InlineKeyboardButton('𝖤𝖽𝗂𝗍𝗈𝗋', url='https://t.me/TG_x_filter')
             ],[
             InlineKeyboardButton('◀️ 𝖡𝖺𝖼𝗄 ◀️', callback_data='help2')
         ]]
