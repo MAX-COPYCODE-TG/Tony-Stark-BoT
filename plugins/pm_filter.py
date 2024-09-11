@@ -159,19 +159,19 @@ async def pm_next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("≼ 𝘉𝘢𝘤𝘬", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("≼ 𝖡𝖺𝖼𝗄", callback_data=f"pmnext_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"💠 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]                                  
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"💠 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝘕𝘦𝘹𝘵 ≽", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("𝖭𝖾𝗑𝗍 ≽", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("≼ 𝘉𝘢𝘤𝘬", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("≼ 𝖡𝖺𝖼𝗄", callback_data=f"pmnext_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"💠 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝘕𝘦𝘹𝘵 ≽", callback_data=f"pmnext_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("𝖭𝖾𝗑𝗍 ≽", callback_data=f"pmnext_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -251,20 +251,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("≼ 𝘉𝘢𝘤𝘬", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("≼ 𝖡𝖺𝖼𝗄", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"💠 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"💠 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝘕𝘦𝘹𝘵 ≽", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("𝖭𝖾𝗑𝗍 ≽", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("≼ 𝘉𝘢𝘤𝘬", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("≼ 𝖡𝖺𝖼𝗄", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"💠 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝘕𝘦𝘹𝘵 ≽", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("𝖭𝖾𝗑𝗍 ≽", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -295,7 +295,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This movie not found in DataBase')
+            k = await query.message.edit('<b>𝖳𝗁𝗂𝗌 𝗆𝗈𝗏𝗂𝖾 𝗇𝗈𝗍 𝖿𝗈𝗎𝗇𝖽 𝗂𝗇 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾</b>')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -315,7 +315,7 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await query.message.edit('<b>𝘛𝘩𝘪𝘴 𝘮𝘰𝘷𝘪𝘦 𝘯𝘰𝘵 𝘧𝘰𝘶𝘯𝘥 𝘪𝘯 𝘋𝘢𝘵𝘢𝘉𝘢𝘴𝘦</b>')
+        k = await query.message.edit('<b>𝖳𝗁𝗂𝗌 𝗆𝗈𝗏𝗂𝖾 𝗇𝗈𝗍 𝖿𝗈𝗎𝗇𝖽 𝗂𝗇 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾</b>')
         await asyncio.sleep(10)
         await k.delete()
         
@@ -337,7 +337,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+                    return await query.answer('𝖯𝗅𝖾𝖺𝖾𝖾 𝖲𝗁𝖺𝗋𝖾 𝖠𝗇𝖽 𝖲𝗎𝗉𝗉𝗈𝗋𝗍.💞')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
@@ -403,7 +403,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+        return await query.answer('𝖯𝗅𝖾𝖺𝖾𝖾 𝖲𝗁𝖺𝗋𝖾 𝖠𝗇𝖽 𝖲𝗎𝗉𝗉𝗈𝗋𝗍.💞')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -424,7 +424,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode="md")
-        return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+        return await query.answer('𝖯𝗅𝖾𝖺𝖾𝖾 𝖲𝗁𝖺𝗋𝖾 𝖠𝗇𝖽 𝖲𝗎𝗉𝗉𝗈𝗋𝗍.💞')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -465,7 +465,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+        return await query.answer('𝖯𝗅𝖾𝖺𝖾𝖾 𝖲𝗁𝖺𝗋𝖾 𝖠𝗇𝖽 𝖲𝗎𝗉𝗉𝗈𝗋𝗍.💞')
     elif query.data == "backcb":
         await query.answer()
 
@@ -476,7 +476,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+            return await query.answer('𝖯𝗅𝖾𝖺𝖾𝖾 𝖲𝗁𝖺𝗋𝖾 𝖠𝗇𝖽 𝖲𝗎𝗉𝗉𝗈𝗋𝗍.💞')
         buttons = []
         for groupid in groupids:
             try:
@@ -538,8 +538,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "pmfilep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton("𝘔𝘰𝘷𝘪𝘦 𝘎𝘳𝘰𝘶𝘱 1", url='https://t.me/Mallu_Movie_Hub_Group'),
-                          InlineKeyboardButton("𝘔𝘰𝘷𝘪𝘦 𝘎𝘳𝘰𝘶𝘱 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
+                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
+                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
                         ]]
                     )
                 )                       
@@ -583,8 +583,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton("𝘔𝘰𝘷𝘪𝘦 𝘎𝘳𝘰𝘶𝘱 1", url='https://t.me/Mallu_Movie_Hub_Group'),
-                          InlineKeyboardButton("𝘔𝘰𝘷𝘪𝘦 𝘎𝘳𝘰𝘶𝘱 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
+                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
+                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
                         ]]
                     )
                 )
@@ -624,8 +624,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[                          
-                  InlineKeyboardButton("𝘔𝘰𝘷𝘪𝘦 𝘎𝘳𝘰𝘶𝘱 1", url='https://t.me/Mallu_Movie_Hub_Group'),
-                  InlineKeyboardButton("𝘔𝘰𝘷𝘪𝘦 𝘎𝘳𝘰𝘶𝘱 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
+                  InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
+                  InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
                 ]]
             )
         )
