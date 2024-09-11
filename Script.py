@@ -1,30 +1,26 @@
 class script(object):   
     HELP_TXT = """<b>𝖧𝖺𝗒 {}
+𝖠𝗅𝗅 𝖭𝖾𝗐 𝖫𝖺𝗍𝖾𝗌𝗍 𝖥𝖾𝖺𝗍𝗎𝗋𝖾𝗌 𝖶𝗂𝗅𝗅 𝖡𝖾 𝖠𝖽𝖽𝖾𝖽 𝖥𝗈𝗋 𝖤𝖺𝗌𝗒 𝖠𝖼𝖼𝖾𝗌𝗌.!!</b>"""
 
-𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌
+    ABOUT_TXT = """<b>⚠️ 𝖠𝖻𝗈𝗎𝗍 𝖬𝖾</b>
+<b> 🤖 𝖬𝗒 𝗇𝖺𝗆𝖾: {}</b>
 
-/start - 𝖢𝗁𝖾𝖼𝗄 𝖨, 𝗆 𝖠𝗅𝗂𝗏𝖾..
-/status - 𝖡𝗈𝗍 𝖲𝗍𝖺𝗍𝗎𝗌
-/id - 𝖴𝗌𝖾𝗋 𝗂𝗇𝖿𝗈
-/broadcast - 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 (𝗈𝗐𝗇𝖾𝗋 𝗈𝗇𝗅𝗒 )
+<b> 🧑‍💻 𝖢𝗋𝖾𝖺𝗍𝗈𝗋: <a href=tg://settings>𝖬𝗒 𝖥𝗋𝗂𝖾𝗇𝖽</b></a>
 
-𝖣𝗈𝗇'𝗍 𝗌𝗉𝖺𝗆 𝖬𝖾..!!</b>"""
+<b> 👀 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋𝗌: <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
 
-    ABOUT_TXT = """<b>⚠️ About Me</b>
-<b>╭⎋ • My name - {}</b>
-<b>╰⎋ • Creator - <a href=tg://settings>My Friend</b></a>
-<b>╭⎋ • Developers -  <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
-<b>╰⎋ • Language - Python3</b>
-<b>╭⎋ • DataBase - MongoDB</b>
-<b>╰⎋ • Bot  Update - <a href=https://t.me/CopyCode_Bots>Click Here</b></a>"""
+<b> 📋 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾: 𝖯𝗒𝗍𝗁𝗈𝗇3</b>
+
+<b> 📡 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾: 𝖬𝗈𝗇𝗀𝗈𝖣𝖡</b>
+
+<b> 📢 𝖡𝗈𝗍  𝖴𝗉𝖽𝖺𝗍𝖾: <a href=https://t.me/CopyCode_Bots>𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾</b></a>"""
     
-    OWR_TXT = """ <b>🚸 Owner Details</b>
-   <b> • Full Name : 🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b>
-   <b> • Username  : @TG_x_filter</b>
-   <b> • Permanent Dm Link : <a href=https://t.me/TG_x_filter>Click Here</b></a>"""
+    OWR_TXT = """ <b>🚸 𝖮𝗐𝗇𝖾𝗋 𝖣𝖾𝗍𝖺𝗂𝗅𝗌</b>
+   <b> • 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋𝗌 : <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
+   """
 
-    SOURCE_TXT = """<b>🔰 Note</b>
-   <b> • This bot is an open source project.!</b>"""
+    SOURCE_TXT = """<b>🔰 𝖭𝗈𝗍𝖾:</b>
+   <b>• നിനക്ക് പൊറോട്ടയും ബീഫും തരട്ടെ.?</b>"""
 
 
     FILE_TXT = """ʜᴇʟᴘ : <b>ғɪʟᴇ sᴛᴏʀᴇ ᴍᴏᴅᴜʟᴇ.../</b>
