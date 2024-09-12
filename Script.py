@@ -179,23 +179,23 @@ class script(object):
 <b> ♻️ 𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌: <code>{}</code></b>
 
 <b> 🗃 𝖴𝗌𝖾𝖽 𝖲𝗍𝗈𝗋𝖺𝗀𝖾: <code>{}</code> 𝖬𝖡</b>"""
-    LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
+    LOG_TEXT_G = """#AddNewGroup
     
-<b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}</b>
-<b>᚛› 𝐆 𝐈𝐃 ⪼ <code>{b}</code></b>
-<b>✯ group username ⪼ @{c}</b>
-<b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
-<b>᚛› 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {e}</b>
+<b>⪼ 👥 𝖦𝗋𝗈𝗎𝗉 : {a}</b>
+<b>⪼ 🆔 𝖦𝗋𝗈𝗎𝗉 𝖨𝖣 : <code>{b}</code></b>
+<b>⪼ 🧲 𝖦𝗋𝗈𝗎𝗉 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : @{c}</b>
+<b>⪼ 🕵️‍♂️ 𝖳𝗈𝗍𝖺𝗅 𝖬𝖾𝗆𝖻𝖾𝗋𝗌 : {d}</b>
+<b>⪼ 👨‍💻 𝖠𝖽𝖽𝖾𝖽 𝖡𝗒 :{e}</b>
 
-By {f}
+<b>⪼🍃 𝖡𝗈𝗍 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : {f}</b>
 """
-    LOG_TEXT_P = """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
+    LOG_TEXT_P = """#StartNewUser
     
-<b>᚛› 𝐈𝐃 - <code>{}</code></b>
-<b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
-<b>᚛› 𝐔𝐍 - @{}</b>
+<b>⪼ 🆔 𝖨𝖣 : <code>{}</code></b>
+<b>⪼ 😎 𝖭𝖺𝗆𝖾 : {}</b>
+<b>⪼ ♻️ 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : @{}</b>
 
-By @{} """
+<b>⪼ 🍃 𝖡𝗈𝗍 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : @{}</b> """
    
     ZOMBIES_TXT = """𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙺𝙸𝙲𝙺 𝚄𝚂𝙴𝚁𝚂
 
@@ -357,7 +357,7 @@ By @{} """
 
 ‣ /share - ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴʏ ᴛᴇxᴛ ᴛᴏ sᴇɴᴅ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ"""
 
-    CUSTOM_FILE_CAPTION = """<b><u>🚀𝐅𝐢𝐥𝐞 𝐍𝐚𝐦𝐞 </u>: <a href=https://t.me/Mallu_Movie_Hub_Group> {file_name} </a>
+    CUSTOM_FILE_CAPTION = """<b><code>{file_name}</code></b>
    
   ◽️[𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩](https://t.me/Mallu_Movie_Hub_Group)  
   ◽️[𝐁𝐚𝐜𝐤𝐮𝐩 𝐆𝐫𝐨𝐮𝐩](https://t.me/+iEbhY7mM4oE1OTVl)
