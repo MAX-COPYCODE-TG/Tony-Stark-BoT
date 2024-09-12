@@ -149,7 +149,7 @@ async def pm_next_page(bot, query):
     if not files:
         return
     
-    btn = [[InlineKeyboardButton(text=f"⚡ {get_size(file.file_size)} 🔺 {file.file_name}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
+    btn = [[InlineKeyboardButton(text=f"📁 {get_size(file.file_size)} 🔺 {file.file_name}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
                 
     if 0 < offset <= 10:
         off_set = 0
@@ -211,7 +211,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"⚡ {get_size(file.file_size)} 🔺 {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
+                    text=f"📁 {get_size(file.file_size)} 🔺 {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -223,7 +223,7 @@ async def next_page(bot, query):
                     text=f"🔺 {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"⚡ {get_size(file.file_size)}",
+                    text=f"📁 {get_size(file.file_size)}",
                     callback_data=f'files#{nxreq}#{file.file_id}',
                 ),
             ]
@@ -237,9 +237,8 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f' 𝘔𝘰𝘷𝘪𝘦𝘴 ', 'minfo'),
-            InlineKeyboardButton(f' 𝘐𝘯𝘧𝘰 ', 'info'),
-            InlineKeyboardButton(" 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 ", url="https://t.me/cinema_flix_updates")
+            InlineKeyboardButton("⦿ 𝖢𝗁𝖾𝖼𝗄 𝖡𝗈𝗍 𝖯𝗆 ", url=f"https://t.me/{temp.U_NAME}"),
+            InlineKeyboardButton(" 𝖬𝗈𝗏𝗂𝖾 𝖴𝗉𝖽𝖺𝗍𝖾 ⦿", url="https://t.me/cinema_flix_updates")
         ]
     )    
 
@@ -1349,7 +1348,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"⚡ {get_size(file.file_size)} 🔺 {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
+                    text=f"📁 {get_size(file.file_size)} 🔺 {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1362,7 +1361,7 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"⚡ {get_size(file.file_size)}",
+                    text=f"📁 {get_size(file.file_size)}",
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
             ]
@@ -1375,9 +1374,8 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f' 𝘔𝘰𝘷𝘪𝘦𝘴 ', 'minfo'),
-            InlineKeyboardButton(f' 𝘐𝘯𝘧𝘰 ', 'info'),
-            InlineKeyboardButton(" 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 ", url="https://t.me/cinema_flix_updates")
+            InlineKeyboardButton("⦿ 𝖢𝗁𝖾𝖼𝗄 𝖡𝗈𝗍 𝖯𝗆 ", url=f"https://t.me/{temp.U_NAME}"),
+            InlineKeyboardButton(" 𝖬𝗈𝗏𝗂𝖾 𝖴𝗉𝖽𝖺𝗍𝖾 ⦿", url="https://t.me/cinema_flix_updates")
         ]
     )
     if offset != "":
@@ -1429,7 +1427,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🥀 𝘏𝘦𝘺 {message.from_user.mention},𝘠𝘰𝘶'𝘳 𝘴𝘦𝘢𝘳𝘤𝘩 𝘳𝘦𝘴𝘶𝘭𝘵 𝘪𝘴 𝘳𝘦𝘢𝘥𝘺.👀\n\n<b>⚬ 𝘛𝘪𝘵𝘭𝘦: <code>{search}</code></b>\n<b>⚬ 𝘛𝘰𝘵𝘢𝘭 𝘍𝘪𝘭𝘦𝘴:</b> <b>{str(total_results)}</b>\n\n<b>© {message.chat.title}</b>"
+        cap = f"<b>𝖧𝖾𝗒 {message.from_user.mention},👋\n\n<b>𝖳𝗂𝗍𝗅𝖾 :</b> <b>{search}</b>\n<b>𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾 :</b> <b>{str(total_results)}</b>\n\n<b>{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
