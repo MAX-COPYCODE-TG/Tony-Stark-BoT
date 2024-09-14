@@ -22,12 +22,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✗ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ✗', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝐎𝐭𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐬', url='https://t.me/cinema_flix_updates'),
-            InlineKeyboardButton('𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/+iEbhY7mM4oE1OTVl')
+            InlineKeyboardButton('𝖮𝗍𝗍 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/cinema_flix_updates'),
+            InlineKeyboardButton('𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
-            InlineKeyboardButton('〄 𝐂𝐡𝐞𝐜𝐤 𝐌𝐲 𝐏𝐦 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('〄 𝖢𝗁𝖾𝖼𝗄 𝖬𝗒 𝖯𝗆 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -41,13 +41,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⇌ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩꜱ ⇌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✗ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ✗', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎗 Oᴡɴᴇʀ', callback_data='owr'),
-            InlineKeyboardButton('☃️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('𝖬𝗈𝗏𝗂𝖾 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/cinema_flix_updates')
         ], [
-            InlineKeyboardButton('✦ 𝖧ᴇʟᴩ ✦', callback_data='help2'),
-            InlineKeyboardButton('✦ 𝖠ʙᴏᴜᴛ ✦', callback_data='about')
+            InlineKeyboardButton('𝖧𝖾𝗅𝗉', callback_data='help2'),
+            InlineKeyboardButton('𝖮𝗐𝗇𝖾𝗋 𝗂𝗇𝖿𝗈', callback_data='owr'),
+            InlineKeyboardButton('𝖠𝖻𝗈𝗎𝗍', callback_data='about')
+        ], [
+            InlineKeyboardButton('🍾 𝖬𝗈𝗏𝗂𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖦𝗋𝗈𝗎𝗉 🍾', url='https://t.me/+iEbhY7mM4oE1OTVl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -70,7 +73,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "𝐂𝐥𝐢𝐜𝐤 𝐓𝐨 𝐉𝐨𝐢𝐧", url=invite_link.invite_link
+                    "🔌 𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 🔌", url=invite_link.invite_link
                 )
             ]
         ]
@@ -79,9 +82,9 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(" 𝐘𝐞𝐬 𝐢 𝐌𝐚 𝐉𝐨𝐢𝐧𝐞𝐝", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton(" 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 🔃", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 𝐘𝐞𝐬 𝐢 𝐌𝐚 𝐉𝐨𝐢𝐧𝐞𝐝", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton(" 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 🔃", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text=FORCE_SUB_TEXT,
@@ -91,13 +94,16 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⇌ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩꜱ ⇌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✗ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ✗', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎗 Oᴡɴᴇʀ', callback_data='owr'),
-            InlineKeyboardButton('☃️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('𝖬𝗈𝗏𝗂𝖾 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/cinema_flix_updates')
         ], [
-            InlineKeyboardButton('✦ 𝖧ᴇʟᴩ ✦', callback_data='help2'),
-            InlineKeyboardButton('✦ 𝖠ʙᴏᴜᴛ ✦', callback_data='about')
+            InlineKeyboardButton('𝖧𝖾𝗅𝗉', callback_data='help2'),
+            InlineKeyboardButton('𝖮𝗐𝗇𝖾𝗋 𝗂𝗇𝖿𝗈', callback_data='owr'),
+            InlineKeyboardButton('𝖠𝖻𝗈𝗎𝗍', callback_data='about')
+        ], [
+            InlineKeyboardButton('🍾 𝖬𝗈𝗏𝗂𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖦𝗋𝗈𝗎𝗉 🍾', url='https://t.me/+iEbhY7mM4oE1OTVl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -221,8 +227,8 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [[                          
-                      InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/Mallu_Movie_Hub_Group'),
-                      InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url='https://t.me/cinema_flix_updates')
+                      InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
+                      InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
                     ]]
                 )
             )
@@ -260,8 +266,8 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [[                          
-               InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/Mallu_Movie_Hub_Group'),
-               InlineKeyboardButton("𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url='https://t.me/cinema_flix_updates')
+               InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
+               InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
             ]]
            )
         )
@@ -330,7 +336,7 @@ async def delete(bot, message):
         '_id': file_id,
     })
     if result.deleted_count:
-        await msg.edit('File is successfully deleted from database')
+        await msg.edit('✅ 𝖥𝗂𝗅𝖾 𝗂𝗌 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝖿𝗋𝗈𝗆 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 🗑️')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
         result = await Media.collection.delete_many({
@@ -339,7 +345,7 @@ async def delete(bot, message):
             'mime_type': media.mime_type
             })
         if result.deleted_count:
-            await msg.edit('File is successfully deleted from database')
+            await msg.edit('✅ 𝖥𝗂𝗅𝖾 𝗂𝗌 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝖿𝗋𝗈𝗆 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 🗑️')
         else:
             # files indexed before https://github.com/EvamariaTG/EvaMaria/commit/f3d2a1bcb155faf44178e5d7a685a1b533e714bf#diff-86b613edf1748372103e94cacff3b578b36b698ef9c16817bb98fe9ef22fb669R39 
             # have original file name.
@@ -349,25 +355,25 @@ async def delete(bot, message):
                 'mime_type': media.mime_type
             })
             if result.deleted_count:
-                await msg.edit('File is successfully deleted from database')
+                await msg.edit('✅ 𝖥𝗂𝗅𝖾 𝗂𝗌 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝖿𝗋𝗈𝗆 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 🗑️')
             else:
-                await msg.edit('File not found in database')
+                await msg.edit('🥱 𝖥𝗂𝗅𝖾 𝗇𝗈𝗍 𝖿𝗈𝗎𝗇𝖽 𝗂𝗇 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾')
 
 
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
-        'This will delete all indexed files.\nDo you want to continue??',
+        '🚸𝖳𝗁𝗂𝗌 𝗐𝗂𝗅𝗅 𝖽𝖾𝗅𝖾𝗍𝖾 𝖺𝗅𝗅 𝗂𝗇𝖽𝖾𝗑𝖾𝖽 𝖿𝗂𝗅𝖾𝗌.\n𝖣𝗈 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍 𝗍𝗈 𝖼𝗈𝗇𝗍𝗂𝗇𝗎𝖾??🚸',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="YES", callback_data="autofilter_delete"
+                        text="✅ 𝖸𝖾𝗌", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="CANCEL", callback_data="close_data"
+                        text="𝖢𝖺𝗇𝖼𝖾𝗅 ❌", callback_data="close_data"
                     )
                 ],
             ]
