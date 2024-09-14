@@ -1422,16 +1422,25 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>𝖧𝖾𝗒 {message.from_user.mention},👋\n\n<b>𝖳𝗂𝗍𝗅𝖾 :</b> <b>{search}</b>\n<b>𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾 :</b> <b>{str(total_results)}</b>\n\n<b>{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
+            if message.chat.id == SUPPORT_CHAT_ID:
+                await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.\n\nKindly ask movies and series here ⬇\n@blaster_linkz</b>")
+            else:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fmsg.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
+            if message.chat.id == SUPPORT_CHAT_ID:
+                await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.\n\nKindly ask movies and series here ⬇\n@blaster_linkz</b>")
+            else:
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             fmsg = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
             await asyncio.sleep(IMDB_DELET_TIME)
             await fmsg.delete()            
         except Exception as e:
+            if message.chat.id == SUPPORT_CHAT_ID:
+                await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.\n\nKindly ask movies and series here ⬇\n@blaster_linkz</b>")
+            else:
             logger.exception(e)
             fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
