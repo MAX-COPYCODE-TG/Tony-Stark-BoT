@@ -97,23 +97,19 @@ async def give_filter(client, message):
                 await auto_filter(client, message)   
 
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
-async def give_filter(client, message):
-    if message.chat.id != SUPPORT_CHAT_ID:
-        await global_filters(client, message)
-    manual = await manual_filters(client, message)
-    if manual == False:
-        settings = await get_settings(message.chat.id)
-        try:
-            if settings['auto_ffilter']:
-                await auto_filter(client, message)
-        except KeyError:
-            grpid = await active_connection(str(message.from_user.id))
-            await save_group_settings(grpid, 'auto_ffilter', True)
-            settings = await get_settings(message.chat.id)
-            if settings['auto_ffilter']:
-                await auto_filter(client, message) 
-            
+@Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
+async def pm_filter(client, message):
+    if PMFILTER:
+        if G_FILTER:
+            kd = await global_filters(client, message)
+            if kd == False:
+                await pm_AutoFilter(client, message)
+        else:
+            await pm_AutoFilter(client, message)
+    else:
+        return
+
+
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pv_filter(client, message):
     kd = await global_filters(client, message)
@@ -1419,28 +1415,19 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>𝖧𝖾𝗒 {message.from_user.mention},👋\n\n<b>𝖳𝗂𝗍𝗅𝖾 :</b> <b>{search}</b>\n<b>𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾 :</b> <b>{str(total_results)}</b>\n\n<b>{message.chat.title}</b>"
+        cap = f"<b>𝖧𝖾𝗒 {message.from_user.mention},👋</b>\n\n<b>𝖳𝗂𝗍𝗅𝖾 :</b> <b>{search}</b>\n<b>𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾 :</b> <b>{str(total_results)}</b>\n\n<b>{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
-            if message.chat.id == SUPPORT_CHAT_ID:
-                await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.\n\nKindly ask movies and series here ⬇\n@blaster_linkz</b>")
-            else:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fmsg.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-            if message.chat.id == SUPPORT_CHAT_ID:
-                await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.\n\nKindly ask movies and series here ⬇\n@blaster_linkz</b>")
-            else:
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             fmsg = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
             await asyncio.sleep(IMDB_DELET_TIME)
             await fmsg.delete()            
         except Exception as e:
-            if message.chat.id == SUPPORT_CHAT_ID:
-                await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.\n\nKindly ask movies and series here ⬇\n@blaster_linkz</b>")
-            else:
             logger.exception(e)
             fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
