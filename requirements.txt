@@ -15,3 +15,12 @@ pytz
 requests
 tgcrypto
 pyshorteners
+psutil
+Pillow
+telegraph
+googletrans
+gTTS
+yt-dlp
+wget
+youtube_search
+youtube-dl
