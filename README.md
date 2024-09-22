@@ -1,8 +1,8 @@
 
 <p align="center">
-  <img src="........" alt="Mr.KD BOTZZ LOGO">
+  <img src="https://envs.sh/PvU.jpg" alt="Mr.KD BOTZZ LOGO">
 </p>
 <h1 align="center">
-  <b>❍NARUTO FILTER BOT❍</b>
+  <b>ʟɪꜱᴀ💋</b>
 </h1>
 
