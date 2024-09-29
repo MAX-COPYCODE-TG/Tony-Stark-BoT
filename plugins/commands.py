@@ -27,7 +27,7 @@ async def start(client, message):
             InlineKeyboardButton('𝖮𝗍𝗍 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/cinema_flix_updates'),
             InlineKeyboardButton('𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
-            InlineKeyboardButton('〄 𝖢𝗁𝖾𝖼𝗄 𝖬𝗒 𝖯𝗆 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('〄 𝖢𝗁𝖾𝖼𝗄 𝖬𝗒 𝖯m 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
